@@ -104,7 +104,7 @@ class interfaz_master : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        var cam = Camera(this)
+        val cam = Camera(this)
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             val imageBitmap = data!!.extras.get("data") as Bitmap
             FotoTemporal = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
@@ -141,9 +141,9 @@ class interfaz_master : AppCompatActivity() {
     }
 
     private fun Perfil() {
-        var camara = Camera(this@interfaz_master)
+        val camara = Camera(this@interfaz_master)
         try {
-            var people :UsuarioMT? = intent.extras.getSerializable("master") as? UsuarioMT
+            val people :UsuarioMT? = intent.extras.getSerializable("master") as? UsuarioMT
             txtNombreMasterProfile.text = Editable.Factory.getInstance().newEditable(people!!.TM_Nombre.toString())
             txtApellidoMasterProfile.text = Editable.Factory.getInstance().newEditable(people.TM_Apellido.toString())
             txtPasswordMasterProfile.text = Editable.Factory.getInstance().newEditable(people.TM_Password.toString())
