@@ -19,9 +19,9 @@ class seleccion_usuarios : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seleccion_usuarios)
 
-        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
         db = DBHelper(this)
-        if (db.getTask("patito123","master").nombre.isNullOrEmpty()) db.addUser(UsuarioMT(0,"Edison Bladimir","Andrade Prieto","master","none","0998275721","patito123"))
+        if (db.getTask("patito123","master").TM_Nombre.isNullOrEmpty()) db.addUser(UsuarioMT(0,"Edison Bladimir","Andrade Prieto","master","none","0998275721","patito123"))
         viewPager = findViewById(R.id.viewPageTipoRegistro)
         viewPager.adapter = Tipos_Registro(this)
     }

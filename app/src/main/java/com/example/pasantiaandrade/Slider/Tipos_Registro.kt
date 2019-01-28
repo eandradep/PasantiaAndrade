@@ -81,7 +81,7 @@ class Tipos_Registro(private var context: Context) : PagerAdapter() {
                 }
                 1 -> {
                     var usuario = db.getTask(passwordUsuario, "master")
-                    if (usuario.nombre.isNullOrEmpty() or usuario.nombre.isNullOrBlank())
+                    if (usuario.TM_Nombre.isNullOrEmpty() or usuario.TM_Nombre.isNullOrBlank())
                         TastyToast.makeText(context, "Acceso Denegado", TastyToast.LENGTH_SHORT, TastyToast.ERROR);
                     else {
                         TastyToast.makeText(context, "Acceso Consedido Master", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS);

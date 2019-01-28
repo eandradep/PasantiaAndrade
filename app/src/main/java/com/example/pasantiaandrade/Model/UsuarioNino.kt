@@ -4,24 +4,24 @@ import java.io.Serializable
 
 class UsuarioNino : Serializable  {
 
-    var id : Int=0
-    var nombre : String?=null
-    var apellido:String?=null
-    var fecha_nacimiento:String?=null
-    var imagen:String?=null
-    var telefono:String?=null
-    var direccion:String?=null
+    var TN_id : Int=0
+    var TN_Nombre : String?=null
+    var TN_Apellido:String?=null
+    var TN_Fecha_Nac:String?=null
+    var TN_Imagen:String?=null
+    var TN_Telefono:String?=null
+    var TN_Direccion:String?=null
 
     constructor(){}
 
     constructor(id: Int , nombre: String, apellido:String, fecha_Nacimiento:String, imagen:String, telefono:String, direccion:String){
-        this.id = id
-        this.nombre = nombre
-        this.apellido = apellido
-        this.fecha_nacimiento= fecha_Nacimiento
-        this.imagen= imagen
-        this.telefono =telefono
-        this.direccion = direccion
+        this.TN_id = id
+        this.TN_Nombre = nombre
+        this.TN_Apellido = apellido
+        this.TN_Fecha_Nac= fecha_Nacimiento
+        this.TN_Imagen= imagen
+        this.TN_Telefono =telefono
+        this.TN_Direccion = direccion
     }
 
 }

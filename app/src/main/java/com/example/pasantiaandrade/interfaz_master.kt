@@ -40,6 +40,8 @@ class interfaz_master : AppCompatActivity() {
 
         Tipografica()
 
+        Perfil()
+
         btnEnableEditMasterProfile.setOnClickListener { HabilitarEdicion() }
 
         btnTomarFotoMasterProfile.setOnClickListener { TomarFoto() }
@@ -48,11 +50,11 @@ class interfaz_master : AppCompatActivity() {
 
         btnLogOutMasterProfile.setOnClickListener { SingOut() }
 
-        btnCreateChildProfileMaster.setOnClickListener { startActivity(Intent(this@interfaz_master, RegistrarNino::class.java)) }
+        btnCreateChildProfileMaster.setOnClickListener { startActivity(Intent(this@interfaz_master, RegistrarNino::class.java).putExtra("MasterID",ID)) }
 
         btnListadoNinosMaster.setOnClickListener { startActivity(Intent(this@interfaz_master, Listado_Ninos::class.java))  }
 
-        Perfil()
+
     }
 
     private fun SingOut() {
@@ -142,12 +144,12 @@ class interfaz_master : AppCompatActivity() {
         var camara = Camera(this@interfaz_master)
         try {
             var people :UsuarioMT? = intent.extras.getSerializable("master") as? UsuarioMT
-            txtNombreMasterProfile.text = Editable.Factory.getInstance().newEditable(people!!.nombre.toString())
-            txtApellidoMasterProfile.text = Editable.Factory.getInstance().newEditable(people.apellido.toString())
-            txtPasswordMasterProfile.text = Editable.Factory.getInstance().newEditable(people.password.toString())
-            txtTelefonoMasterProfile.text = Editable.Factory.getInstance().newEditable(people.telefono.toString())
-            ID = people.id
-            FotoTemporal = people.imagen.toString()
+            txtNombreMasterProfile.text = Editable.Factory.getInstance().newEditable(people!!.TM_Nombre.toString())
+            txtApellidoMasterProfile.text = Editable.Factory.getInstance().newEditable(people.TM_Apellido.toString())
+            txtPasswordMasterProfile.text = Editable.Factory.getInstance().newEditable(people.TM_Password.toString())
+            txtTelefonoMasterProfile.text = Editable.Factory.getInstance().newEditable(people.TM_Telefono.toString())
+            ID = people.TM_Id
+            FotoTemporal = people.TM_Imagen.toString()
             Glide.with(this).load(camara.Buscar_Foto("JPG_$FotoTemporal")).into(imgMasterProfile)
         }catch (e: kotlin.KotlinNullPointerException){
             Glide.with(this).load(R.drawable.nouser).into(imgMasterProfile)

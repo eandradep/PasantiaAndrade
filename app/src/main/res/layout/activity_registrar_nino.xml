@@ -104,7 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="Fecha Actual y Hora Actual de Rgistro del NIno"/>
+            android:text="El Registro tomara la Fecha y Hora Actual"/>
 
         <EditText
             android:id="@+id/txtAreaValoracionInicial"
