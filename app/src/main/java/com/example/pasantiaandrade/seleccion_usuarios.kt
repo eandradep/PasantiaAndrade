@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager
 import android.view.WindowManager
 import com.example.pasantiaandrade.DBHelper.DBHelper
 import com.example.pasantiaandrade.Model.UsuarioMT
-import com.example.pasantiaandrade.Slider.Tipos_Registro
+import com.example.pasantiaandrade.Slider.slide_tipos_registro
 
 class seleccion_usuarios : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ class seleccion_usuarios : AppCompatActivity() {
         db = DBHelper(this)
         if (db.getTask("patito123","master").TM_Nombre.isNullOrEmpty()) db.addUser(UsuarioMT(0,"Edison Bladimir","Andrade Prieto","master","none","0998275721","patito123"))
         viewPager = findViewById(R.id.viewPageTipoRegistro)
-        viewPager.adapter = Tipos_Registro(this)
+        viewPager.adapter = slide_tipos_registro(this)
     }
 
 }

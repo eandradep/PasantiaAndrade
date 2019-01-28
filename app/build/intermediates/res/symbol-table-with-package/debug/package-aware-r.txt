@@ -853,6 +853,7 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id MitadHorizontal
 id SHIFT
 id SYM
 id SlideTipoRegistroDescripcion
@@ -955,6 +956,7 @@ id icon_group
 id ifRoom
 id image
 id imgMasterProfile
+id imgNinoLista
 id imgRegisterChil
 id info
 id infoView
@@ -969,6 +971,11 @@ id lblFechaHoraActualRegistroNino
 id lblFotoMasterProfile
 id lblGuardarMasterProfile
 id lblHabilitarMasterProfile
+id lblListaNinoApellido
+id lblListaNinoDireccion
+id lblListaNinoEdad
+id lblListaNinoNombre
+id lblListaTelefono
 id lblPasswordUsuario
 id lblRegistrarNino
 id lblTituloApp
@@ -980,6 +987,7 @@ id line3
 id linearLayout
 id listMode
 id list_item
+id lstObservacionesNinos
 id masked
 id media_actions
 id message
@@ -1034,6 +1042,7 @@ id showHome
 id showTitle
 id slideTipoRegistroImagen
 id slideTipoRegistroTitulo
+id sliderListadoNino
 id sliderTipoRegistro
 id smallLabel
 id snackbar_action
@@ -1091,6 +1100,7 @@ id txtTelefonoRegistroNino
 id uniform
 id up
 id useLogo
+id viewPageListadoNino
 id viewPageTipoRegistro
 id view_offset_helper
 id visible
@@ -1176,6 +1186,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout slide_ninos_listado
 layout slide_tipos_registro
 layout success_toast_layout
 layout support_simple_spinner_dropdown_item
