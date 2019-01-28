@@ -1,0 +1,303 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:2:1-14:12
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:17:1-32:12
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-0.10.8.aar\ab699dc97178c1e899ea88e0e9ec96fc\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-coroutines-0.10.8.aar\ebc6f8bbd430ab2fe65a63082e8c8e5c\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c79cb90c18b0e28ae87546c3d2ad3931\AndroidManifest.xml:17:1-22:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-commons-0.10.8.aar\1ce8058ad35d73212e9237780ca00072\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\appcompatV7-base-0.10.8.aar\96ae3d9623efcddf26b8185c421a8674\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b07dd7b65c2c62d60da3bfc6f0146f98\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b0e49726e5bd50c17378fa6812555651\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\46fc02b64d2755694cba39e8ecaab638\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\558d73d5189fed0295574c173997a581\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\f82a41d22c900c5ec9140e6a33c920a1\AndroidManifest.xml:2:1-12:12
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-0.10.8.aar\2ff3486dd4808539af2c31e4b5bb41ca\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-commons-0.10.8.aar\173d96616bd55621248d3b275e99f8b5\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\supportV4-base-0.10.8.aar\98d0db373f67235e037df528941e316e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\31f8a98c8584fe819476c9b0dd317115\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\d467df9a51fa0298ca738d1be335a2f2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\cdb5be5fbecccb2a9a03fd24f181e27f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\e51c49891f9ff3cd59b0e8b1204d81cd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\a7502f675ac6fb4347587812bfe8980b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4a7403e13ecab9c78bf42377ec862848\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f84b3aec9016441dc555719f32de1d24\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\804e7d44ed3eb52da8e1a4a9ad45a0b0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\4eb8d4ab75f6c4ce06dcab18d2ac687f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\e7f3b9ae377421deee658cd863228248\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\092e991014f7ec71d1a68f097238a072\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4b3cca49964e42618ac1de3b5b1f9da0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\96fe891acb373d8d74a9342bdac9204c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\2741eac4a67613623ee722a59b90ec22\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f9d778282a66319600a9944800af82ac\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\10ef80d0474ee9a18ee2e00e4ed88cd7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\1bc27b031bda5de81f09db101f5cb455\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\36f6addc73e64b8d1c95be621537b1e2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\209664cb26396e09dbb54ce3b41f9283\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\9866cb6522eaf3052e8fe07a90136398\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\ecb57f3768abca55711028b7fa9c15a5\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ad6b8009f28d38f62c7b4ceab8080249\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1f56eea22d493a838b5acfcc366d2ccc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\a1cd3f1da43f4ef6a04005ae335f78ca\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\3b4260ba521c01b3cfbb9df31a33e401\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\db227b783fecf9dbcbc5b7f35b8fd999\AndroidManifest.xml:17:1-22:12
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sqlite-0.10.8.aar\7d7bce606231d4a3c310ca658b3e9ec0\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-0.10.8.aar\9ec32cbbf1152998369e64e4d1c1f290\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-coroutines-0.10.8.aar\d370e081efeb9911d1d0e1deab926c95\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-commons-0.10.8.aar\a7be98fa1c1334db09c97caa0ad8969a\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:sqlite-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\sqlite-base-0.10.8.aar\e7866b3e2a9d233828cda94d92dfc889\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\platform-base-0.10.8.aar\0745416c3cf9ecc0349155d2876a6be3\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\commons-base-0.10.8.aar\80d19956d20bc73d08d093c0d0d6b0dd\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e5ebc4e32bbc2b419a7589345f18c59a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\15bc08919dde91ec0d8f174030b44dcd\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01dbc44a095612311f44e762defe9d65\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\944e5ded5d75422ee400d0db272e1e16\AndroidManifest.xml:17:1-22:12
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-coroutines-0.10.8.aar\728e3a8077179f9b712b2fe9128a7167\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-34:12
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:6:5-8:35
+	android:required
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:8:9-32
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:7:9-49
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:9:5-11:38
+	android:maxSdkVersion
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:11:9-35
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:10:9-65
+application
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:13:5-32:19
+MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:11:5-12:19
+MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:11:5-12:19
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:26:5-30:19
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:26:5-30:19
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-0.10.8.aar\ab699dc97178c1e899ea88e0e9ec96fc\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-0.10.8.aar\ab699dc97178c1e899ea88e0e9ec96fc\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-coroutines-0.10.8.aar\ebc6f8bbd430ab2fe65a63082e8c8e5c\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-coroutines-0.10.8.aar\ebc6f8bbd430ab2fe65a63082e8c8e5c\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-commons-0.10.8.aar\1ce8058ad35d73212e9237780ca00072\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-commons-0.10.8.aar\1ce8058ad35d73212e9237780ca00072\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b0e49726e5bd50c17378fa6812555651\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b0e49726e5bd50c17378fa6812555651\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\558d73d5189fed0295574c173997a581\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\558d73d5189fed0295574c173997a581\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\f82a41d22c900c5ec9140e6a33c920a1\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\f82a41d22c900c5ec9140e6a33c920a1\AndroidManifest.xml:10:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-0.10.8.aar\2ff3486dd4808539af2c31e4b5bb41ca\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-0.10.8.aar\2ff3486dd4808539af2c31e4b5bb41ca\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-commons-0.10.8.aar\173d96616bd55621248d3b275e99f8b5\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-commons-0.10.8.aar\173d96616bd55621248d3b275e99f8b5\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\36f6addc73e64b8d1c95be621537b1e2\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\36f6addc73e64b8d1c95be621537b1e2\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\209664cb26396e09dbb54ce3b41f9283\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\209664cb26396e09dbb54ce3b41f9283\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\ecb57f3768abca55711028b7fa9c15a5\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\ecb57f3768abca55711028b7fa9c15a5\AndroidManifest.xml:9:5-20
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sqlite-0.10.8.aar\7d7bce606231d4a3c310ca658b3e9ec0\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sqlite-0.10.8.aar\7d7bce606231d4a3c310ca658b3e9ec0\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-0.10.8.aar\9ec32cbbf1152998369e64e4d1c1f290\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-0.10.8.aar\9ec32cbbf1152998369e64e4d1c1f290\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-coroutines-0.10.8.aar\d370e081efeb9911d1d0e1deab926c95\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-coroutines-0.10.8.aar\d370e081efeb9911d1d0e1deab926c95\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-commons-0.10.8.aar\a7be98fa1c1334db09c97caa0ad8969a\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-commons-0.10.8.aar\a7be98fa1c1334db09c97caa0ad8969a\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-coroutines-0.10.8.aar\728e3a8077179f9b712b2fe9128a7167\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-coroutines-0.10.8.aar\728e3a8077179f9b712b2fe9128a7167\AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\36f6addc73e64b8d1c95be621537b1e2\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:16:9-41
+	android:roundIcon
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:17:9-54
+	android:icon
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:14:9-35
+	android:theme
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:19:9-68
+activity#com.example.pasantiaandrade.Listado_Ninos
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:20:9-60
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:20:19-48
+activity#com.example.pasantiaandrade.RegistrarNino
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:21:9-51
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:21:19-48
+activity#com.example.pasantiaandrade.interfaz_master
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:22:9-53
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:22:19-50
+activity#com.example.pasantiaandrade.seleccion_usuarios
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:23:9-31:20
+	android:screenOrientation
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:25:13-50
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:24:13-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:29:27-74
+uses-sdk
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:7:5-9:41
+MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:7:5-9:41
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:22:5-24:41
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-0.10.8.aar\ab699dc97178c1e899ea88e0e9ec96fc\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-0.10.8.aar\ab699dc97178c1e899ea88e0e9ec96fc\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-coroutines-0.10.8.aar\ebc6f8bbd430ab2fe65a63082e8c8e5c\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-coroutines-0.10.8.aar\ebc6f8bbd430ab2fe65a63082e8c8e5c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c79cb90c18b0e28ae87546c3d2ad3931\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c79cb90c18b0e28ae87546c3d2ad3931\AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-commons-0.10.8.aar\1ce8058ad35d73212e9237780ca00072\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-commons-0.10.8.aar\1ce8058ad35d73212e9237780ca00072\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\appcompatV7-base-0.10.8.aar\96ae3d9623efcddf26b8185c421a8674\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\appcompatV7-base-0.10.8.aar\96ae3d9623efcddf26b8185c421a8674\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b07dd7b65c2c62d60da3bfc6f0146f98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b07dd7b65c2c62d60da3bfc6f0146f98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b0e49726e5bd50c17378fa6812555651\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b0e49726e5bd50c17378fa6812555651\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\46fc02b64d2755694cba39e8ecaab638\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\46fc02b64d2755694cba39e8ecaab638\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\558d73d5189fed0295574c173997a581\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\558d73d5189fed0295574c173997a581\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\f82a41d22c900c5ec9140e6a33c920a1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\f82a41d22c900c5ec9140e6a33c920a1\AndroidManifest.xml:6:5-8:41
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-0.10.8.aar\2ff3486dd4808539af2c31e4b5bb41ca\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-0.10.8.aar\2ff3486dd4808539af2c31e4b5bb41ca\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-commons-0.10.8.aar\173d96616bd55621248d3b275e99f8b5\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-support-v4-commons-0.10.8.aar\173d96616bd55621248d3b275e99f8b5\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\supportV4-base-0.10.8.aar\98d0db373f67235e037df528941e316e\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\supportV4-base-0.10.8.aar\98d0db373f67235e037df528941e316e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\31f8a98c8584fe819476c9b0dd317115\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\31f8a98c8584fe819476c9b0dd317115\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\d467df9a51fa0298ca738d1be335a2f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\d467df9a51fa0298ca738d1be335a2f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\cdb5be5fbecccb2a9a03fd24f181e27f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\cdb5be5fbecccb2a9a03fd24f181e27f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\e51c49891f9ff3cd59b0e8b1204d81cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\e51c49891f9ff3cd59b0e8b1204d81cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\a7502f675ac6fb4347587812bfe8980b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\a7502f675ac6fb4347587812bfe8980b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4a7403e13ecab9c78bf42377ec862848\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4a7403e13ecab9c78bf42377ec862848\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f84b3aec9016441dc555719f32de1d24\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f84b3aec9016441dc555719f32de1d24\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\804e7d44ed3eb52da8e1a4a9ad45a0b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\804e7d44ed3eb52da8e1a4a9ad45a0b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\4eb8d4ab75f6c4ce06dcab18d2ac687f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\4eb8d4ab75f6c4ce06dcab18d2ac687f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\e7f3b9ae377421deee658cd863228248\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\e7f3b9ae377421deee658cd863228248\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\092e991014f7ec71d1a68f097238a072\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\092e991014f7ec71d1a68f097238a072\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4b3cca49964e42618ac1de3b5b1f9da0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4b3cca49964e42618ac1de3b5b1f9da0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\96fe891acb373d8d74a9342bdac9204c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\96fe891acb373d8d74a9342bdac9204c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\2741eac4a67613623ee722a59b90ec22\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\2741eac4a67613623ee722a59b90ec22\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f9d778282a66319600a9944800af82ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f9d778282a66319600a9944800af82ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\10ef80d0474ee9a18ee2e00e4ed88cd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\10ef80d0474ee9a18ee2e00e4ed88cd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\1bc27b031bda5de81f09db101f5cb455\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\1bc27b031bda5de81f09db101f5cb455\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\36f6addc73e64b8d1c95be621537b1e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\36f6addc73e64b8d1c95be621537b1e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\209664cb26396e09dbb54ce3b41f9283\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\209664cb26396e09dbb54ce3b41f9283\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\9866cb6522eaf3052e8fe07a90136398\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\9866cb6522eaf3052e8fe07a90136398\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\ecb57f3768abca55711028b7fa9c15a5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\ecb57f3768abca55711028b7fa9c15a5\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ad6b8009f28d38f62c7b4ceab8080249\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ad6b8009f28d38f62c7b4ceab8080249\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1f56eea22d493a838b5acfcc366d2ccc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1f56eea22d493a838b5acfcc366d2ccc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\a1cd3f1da43f4ef6a04005ae335f78ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\a1cd3f1da43f4ef6a04005ae335f78ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\3b4260ba521c01b3cfbb9df31a33e401\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\3b4260ba521c01b3cfbb9df31a33e401\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\db227b783fecf9dbcbc5b7f35b8fd999\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\db227b783fecf9dbcbc5b7f35b8fd999\AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sqlite-0.10.8.aar\7d7bce606231d4a3c310ca658b3e9ec0\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sqlite-0.10.8.aar\7d7bce606231d4a3c310ca658b3e9ec0\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-0.10.8.aar\9ec32cbbf1152998369e64e4d1c1f290\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-0.10.8.aar\9ec32cbbf1152998369e64e4d1c1f290\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-coroutines-0.10.8.aar\d370e081efeb9911d1d0e1deab926c95\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-sdk27-coroutines-0.10.8.aar\d370e081efeb9911d1d0e1deab926c95\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-commons-0.10.8.aar\a7be98fa1c1334db09c97caa0ad8969a\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-commons-0.10.8.aar\a7be98fa1c1334db09c97caa0ad8969a\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:sqlite-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\sqlite-base-0.10.8.aar\e7866b3e2a9d233828cda94d92dfc889\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:sqlite-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\sqlite-base-0.10.8.aar\e7866b3e2a9d233828cda94d92dfc889\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\platform-base-0.10.8.aar\0745416c3cf9ecc0349155d2876a6be3\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\platform-base-0.10.8.aar\0745416c3cf9ecc0349155d2876a6be3\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\commons-base-0.10.8.aar\80d19956d20bc73d08d093c0d0d6b0dd\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\commons-base-0.10.8.aar\80d19956d20bc73d08d093c0d0d6b0dd\AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e5ebc4e32bbc2b419a7589345f18c59a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e5ebc4e32bbc2b419a7589345f18c59a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\15bc08919dde91ec0d8f174030b44dcd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\15bc08919dde91ec0d8f174030b44dcd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01dbc44a095612311f44e762defe9d65\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01dbc44a095612311f44e762defe9d65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\944e5ded5d75422ee400d0db272e1e16\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\944e5ded5d75422ee400d0db272e1e16\AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-coroutines-0.10.8.aar\728e3a8077179f9b712b2fe9128a7167\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-coroutines-0.10.8.aar\728e3a8077179f9b712b2fe9128a7167\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:27:9-29:72
+	android:theme
+		ADDED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.karumi:dexter:5.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\35c1db200d9c30a912cb13f7e2ea1175\AndroidManifest.xml:28:13-60

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoMaster"
+    tools:context=".RegistrarNino">
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/secondView"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgRegisterChil"
+            android:layout_width="130dp"
+            android:layout_height="135dp"
+            android:layout_margin="10dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="3dp"
+            android:src="@drawable/nouser"/>
+
+        <EditText
+            android:id="@+id/txtRegistroNombresNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="textPersonName"
+            android:hint="Nombres del Nino"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/txtRegistroApellidosNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="textPersonName"
+            android:hint="Apellidos del Nino"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/txtFechaNacimientoNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="dd/mm/yyyy"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/txtTelefonoRegistroNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Numero Telefono"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/txtDireccionRegistroNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Direccion Del Nino"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="textPersonName"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/secondView"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblTituloValoracionInicalNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Valoracion Inicial" />
+
+        <TextView
+            android:id="@+id/lblFechaHoraActualRegistroNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Fecha Actual y Hora Actual de Rgistro del NIno"/>
+
+        <EditText
+            android:id="@+id/txtAreaValoracionInicial"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:hint="Observacion Inicial"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/SecundarioMaster">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnRegistrarNino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/savedata" />
+
+                    <TextView
+                        android:id="@+id/lblRegistrarNino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registrar"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2A6171"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnTomarFotoRegistroNino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editphoto" />
+
+                    <TextView
+                        android:id="@+id/lblTomarFotoRegistroNino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TomarFotoPerfil"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2A6171"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnCancelarRegistroNino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cancelar"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/lblCancelarRegistroNino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancelar"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2A6171" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
