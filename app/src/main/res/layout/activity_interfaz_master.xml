@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".interfaz_master"
+    tools:context=".InterfazMaster"
     android:background="@color/FondoMaster">
 
     <LinearLayout
@@ -94,7 +94,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/editphoto"
-                        android:clickable="false" />
+                        android:clickable="false"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:id="@+id/lblFotoMasterProfile"
@@ -118,7 +119,8 @@
                         android:id="@+id/btnEnableEditMasterProfile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/editmaster" />
+                        android:background="@drawable/editmaster"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:id="@+id/lblHabilitarMasterProfile"
@@ -142,7 +144,8 @@
                         android:id="@+id/btnGuardarCambiosMasterProfile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/savedata" />
+                        android:background="@drawable/savedata"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:id="@+id/lblGuardarMasterProfile"
@@ -220,7 +223,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:background="@drawable/addchild" />
+                            android:background="@drawable/addchild"
+                            android:contentDescription="TODO" />
 
                         <TextView
                             android:id="@+id/lblAgregarNinoMasterProfile"
@@ -245,9 +249,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:background="@drawable/listchild" />
+                            android:background="@drawable/listchild"
+                            android:contentDescription="TODO" />
 
                         <TextView
+                            android:id="@+id/lblListadoNinoMaster"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -277,7 +283,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:background="@drawable/adduser" />
+                            android:background="@drawable/adduser"
+                            android:contentDescription="TODO" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -299,7 +306,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:background="@drawable/listuser" />
+                            android:background="@drawable/listuser"
+                            android:contentDescription="TODO" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -332,7 +340,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:background="@drawable/exitacount" />
+                            android:background="@drawable/exitacount"
+                            android:contentDescription="TODO" />
 
                         <TextView
                             android:layout_width="wrap_content"

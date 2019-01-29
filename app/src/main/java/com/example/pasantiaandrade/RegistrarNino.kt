@@ -75,7 +75,7 @@ class RegistrarNino : AppCompatActivity() {
         if(!txtAreaValoracionInicial.text.toString().isNullOrBlank()){
             if (txtRegistroNombresNino.text.toString().isNullOrBlank() or txtRegistroApellidosNino.text.toString().isNullOrBlank()
                     or txtFechaNacimientoNino.text.toString().isNullOrBlank() or txtTelefonoRegistroNino.text.toString().isNullOrBlank()
-                    or txtDireccionRegistroNino.text.toString().isNullOrBlank()){
+                    or txtDireccionRegistroNino.text.toString().isBlank()){
                 TastyToast.makeText(this@RegistrarNino, "LOS DATOS DEBEN ESTAR COMPLETOS", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
             }
             else{

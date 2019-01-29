@@ -19,7 +19,7 @@
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".Listado_Ninos" />
         <activity android:name=".RegistrarNino" />
-        <activity android:name=".interfaz_master" />
+        <activity android:name=".InterfazMaster" />
         <activity
             android:name=".seleccion_usuarios"
             android:screenOrientation="landscape">

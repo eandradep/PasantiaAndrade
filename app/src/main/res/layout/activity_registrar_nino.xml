@@ -141,7 +141,8 @@
                         android:id="@+id/btnRegistrarNino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/savedata" />
+                        android:background="@drawable/savedata"
+                        android:contentDescription="BotonGuardar"/>
 
                     <TextView
                         android:id="@+id/lblRegistrarNino"
@@ -165,7 +166,8 @@
                         android:id="@+id/btnTomarFotoRegistroNino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/editphoto" />
+                        android:background="@drawable/editphoto"
+                        android:contentDescription="Boton Tomar Fotos"/>
 
                     <TextView
                         android:id="@+id/lblTomarFotoRegistroNino"
@@ -190,7 +192,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/cancelar"
-                        android:clickable="false" />
+                        android:clickable="false"
+                        android:contentDescription="Boton Cancelar"/>
 
                     <TextView
                         android:id="@+id/lblCancelarRegistroNino"

@@ -104,6 +104,25 @@ class DBHelper (private var context: Context):SQLiteOpenHelper(context,DATABASE_
         return usuario
     }
 
+    fun ObtenerImagenMaster(_id: Int): String {
+        val usuario = UsuarioMT()
+        val db = writableDatabase
+        val selectQuery = "SELECT  * FROM $USER_TABLE_NAME WHERE $USER_COL_ID == '$_id'"
+        val cursor = db.rawQuery(selectQuery, null)
+        if (cursor != null) {
+            cursor.moveToFirst()
+            while (cursor.isAfterLast == false) {
+
+                usuario.TM_Imagen = cursor.getString(cursor.getColumnIndex(USER_COL_IMAGEN))
+                cursor.moveToNext()
+            }
+        }
+        cursor.close()
+        Log.d("Mensaje","${ usuario.TM_Imagen.toString()}")
+        return usuario.TM_Imagen.toString()
+    }
+
+
     fun addUser(usuarioMT:UsuarioMT){
         val db : SQLiteDatabase = this.writableDatabase
         val values = ContentValues()
@@ -259,7 +278,7 @@ class DBHelper (private var context: Context):SQLiteOpenHelper(context,DATABASE_
      * METODOS CRUD DE LA TABLA VALORACIONES
      */
 
-    fun ObtenerValroaciones(CodigoNino:String):ArrayList<Tab_Observacion>{
+    fun ObtenerValroaciones(CodigoNino: Int):ArrayList<Tab_Observacion>{
         val lstValoracion = ArrayList<Tab_Observacion>()
         val selectquery  = "SELECT * FROM ${DatosTablas.VAL_TABLE_NAME} WHERE ${DatosTablas.VAL_COL_TN_FK} == $CodigoNino"
         val db : SQLiteDatabase = this.writableDatabase

@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager
 import android.view.WindowManager
 import com.example.pasantiaandrade.DBHelper.DBHelper
 import com.example.pasantiaandrade.Model.UsuarioMT
-import com.example.pasantiaandrade.Slider.slide_tipos_registro
+import com.example.pasantiaandrade.Adaptadores.Slider.slide_tipos_registro
 
 class seleccion_usuarios : AppCompatActivity() {
 

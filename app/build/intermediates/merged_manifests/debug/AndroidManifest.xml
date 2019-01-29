@@ -28,7 +28,7 @@
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity android:name="com.example.pasantiaandrade.Listado_Ninos" />
         <activity android:name="com.example.pasantiaandrade.RegistrarNino" />
-        <activity android:name="com.example.pasantiaandrade.interfaz_master" />
+        <activity android:name="com.example.pasantiaandrade.InterfazMaster" />
         <activity
             android:name="com.example.pasantiaandrade.seleccion_usuarios"
             android:screenOrientation="landscape" >
@@ -38,9 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.karumi.dexter.DexterActivity"
-            android:theme="@style/Dexter.Internal.Theme.Transparent" />
     </application>
 
 </manifest>
