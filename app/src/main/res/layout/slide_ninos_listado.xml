@@ -57,9 +57,9 @@
                     android:orientation="vertical">
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgNinoLista"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
                         app:civ_border_color="#FF000000"
                         app:civ_border_width="3dp" />
 
