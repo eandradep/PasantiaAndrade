@@ -8,7 +8,7 @@ import java.io.FileInputStream
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 import java.io.IOException
-class Camera (var context: Context) {
+class MetodosAyuda (var context: Context) {
 
     fun bitmapToFile(bitmap:Bitmap,Nombre:String){
         val fos: FileOutputStream

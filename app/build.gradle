@@ -36,9 +36,11 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.0'//Image View en Circulo bien Chingon
 
     implementation 'com.github.bumptech.glide:glide:4.8.0' //Libreria CHingona para cargar Imagenes
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'// Imagino que es un complento Chingon
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+// Imagino que es un complento Chingon
 
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'// Libreria para Hacer graficos cheveres
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+// Libreria para Hacer graficos cheveres
 }
 repositories {
     mavenCentral()

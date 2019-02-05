@@ -1,6 +1,6 @@
 package com.example.pasantiaandrade.DBHelper
 
-class DatosTablas {
+class VariablesGlobales {
 
     companion object {
         val DATABASE_VER = 1

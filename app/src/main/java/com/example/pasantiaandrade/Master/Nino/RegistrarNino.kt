@@ -1,4 +1,4 @@
-package com.example.pasantiaandrade
+package com.example.pasantiaandrade.Master.Nino
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -13,8 +13,10 @@ import android.support.v7.app.AlertDialog
 import android.view.WindowManager
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.DBHelper.DBHelper
+import com.example.pasantiaandrade.MetodosAyuda
 import com.example.pasantiaandrade.Model.Tab_Observacion
 import com.example.pasantiaandrade.Model.UsuarioNino
+import com.example.pasantiaandrade.R
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.activity_registrar_nino.*
 import java.lang.NumberFormatException
@@ -62,7 +64,7 @@ class RegistrarNino : AppCompatActivity() {
 
     @SuppressLint("SimpleDateFormat")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        val cam = Camera(this)
+        val cam = MetodosAyuda(this)
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             val imageBitmap = data!!.extras.get("data") as Bitmap
             Foto = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
@@ -88,7 +90,7 @@ class RegistrarNino : AppCompatActivity() {
                         if (Foto != null){
                             dbHelper.addNino(UsuarioNino(0,txtRegistroNombresNino.text.toString(),txtRegistroApellidosNino.text.toString(),txtFechaNacimientoNino.text.toString(),Foto!!,txtTelefonoRegistroNino.text.toString(),txtDireccionRegistroNino.text.toString()))
                             TastyToast.makeText(this@RegistrarNino, "Registro Creado", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
-                            dbHelper.RegistrarValoracion(Tab_Observacion(0,intent.extras.getInt("MasterID"),dbHelper.BuscarNinoData(txtRegistroNombresNino.text.toString(),txtRegistroApellidosNino.text.toString(),txtTelefonoRegistroNino.text.toString(),txtDireccionRegistroNino.text.toString(),txtFechaNacimientoNino.text.toString()),lblFechaHoraActualRegistroNino.text.toString(),txtAreaValoracionInicial.text.toString()))
+                            dbHelper.addObservacion(Tab_Observacion(0,intent.extras.getInt("MasterID"),dbHelper.BuscarNinoData(txtRegistroNombresNino.text.toString(),txtRegistroApellidosNino.text.toString(),txtTelefonoRegistroNino.text.toString(),txtDireccionRegistroNino.text.toString(),txtFechaNacimientoNino.text.toString()),lblFechaHoraActualRegistroNino.text.toString(),txtAreaValoracionInicial.text.toString()))
                             this.finish()
                         }
                         else{
@@ -97,7 +99,7 @@ class RegistrarNino : AppCompatActivity() {
                             builder.setPositiveButton("SI"){ _, _ ->
                                 dbHelper.addNino(UsuarioNino(0,txtRegistroNombresNino.text.toString(),txtRegistroApellidosNino.text.toString(),txtFechaNacimientoNino.text.toString(),"none",txtTelefonoRegistroNino.text.toString(),txtDireccionRegistroNino.text.toString()))
                                 TastyToast.makeText(this@RegistrarNino, "Registro Creado", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
-                                dbHelper.RegistrarValoracion(Tab_Observacion(0,intent.extras.getInt("MasterID"),dbHelper.BuscarNinoData(txtRegistroNombresNino.text.toString(),txtRegistroApellidosNino.text.toString(),txtTelefonoRegistroNino.text.toString(),txtDireccionRegistroNino.text.toString(),txtFechaNacimientoNino.text.toString()),lblFechaHoraActualRegistroNino.text.toString(),txtAreaValoracionInicial.text.toString()))
+                                dbHelper.addObservacion(Tab_Observacion(0,intent.extras.getInt("MasterID"),dbHelper.BuscarNinoData(txtRegistroNombresNino.text.toString(),txtRegistroApellidosNino.text.toString(),txtTelefonoRegistroNino.text.toString(),txtDireccionRegistroNino.text.toString(),txtFechaNacimientoNino.text.toString()),lblFechaHoraActualRegistroNino.text.toString(),txtAreaValoracionInicial.text.toString()))
 
                                 this.finish()
                             }

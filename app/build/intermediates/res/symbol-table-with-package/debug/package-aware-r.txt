@@ -737,6 +737,7 @@ id bottom
 id btnAcceder
 id btnCancelarRegistroNino
 id btnCreateChildProfileMaster
+id btnCreateTerapistaProfileMaster
 id btnEnableEditMasterProfile
 id btnGuardarCambiosMasterProfile
 id btnListadoNinosMaster
@@ -750,6 +751,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id checkBox
 id checkbox
 id chronometer
 id clip_horizontal
@@ -955,6 +957,7 @@ layout abc_tooltip
 layout activity_interfaz_master
 layout activity_listado__ninos
 layout activity_registrar_nino
+layout activity_registro_master_terapista
 layout activity_seleccion_usuarios
 layout adaptador_lista_ninos
 layout confusing_toast_layout

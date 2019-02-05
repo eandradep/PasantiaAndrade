@@ -1,4 +1,4 @@
-package com.example.pasantiaandrade.Adaptadores.Slider
+package com.example.pasantiaandrade.Adaptador.Sliders
 
 import android.content.Context
 import android.graphics.Color
@@ -9,12 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.bumptech.glide.Glide
-import com.example.pasantiaandrade.Adaptadores.Slider.listas_Adapter.lista_valoracion
-import com.example.pasantiaandrade.Camera
+import com.example.pasantiaandrade.Adaptador.Listas.lista_valoracion
+import com.example.pasantiaandrade.MetodosAyuda
 import com.example.pasantiaandrade.DBHelper.DBHelper
 import com.example.pasantiaandrade.Model.UsuarioNino
 import com.example.pasantiaandrade.R
 import com.github.mikephil.charting.animation.Easing
+import com.github.mikephil.charting.charts.RadarChart
 import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.data.RadarData
 import com.github.mikephil.charting.data.RadarDataSet
@@ -35,6 +36,7 @@ class slide_ninos_listado(private var context: Context, private var ListadoNinos
     }
 
     val myArray = arrayOf("T . V", "T . A","A & C","P","M . F", "M . G")
+    var radarCharCaracteristicasNino:RadarChart? = null
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -48,26 +50,9 @@ class slide_ninos_listado(private var context: Context, private var ListadoNinos
         view.sliderListadoNino.lblListaNinoDireccion.text= this.ListadoNinos[position].TN_Direccion
         view.sliderListadoNino.lblListaTelefono.text = this.ListadoNinos[position].TN_Telefono
 
-        view.lstObservacionesNinos.adapter = lista_valoracion(context, DBHelper(context).ObtenerValroaciones(this.ListadoNinos[position].TN_id) )
+        view.lstObservacionesNinos.adapter = lista_valoracion(context, DBHelper(context).ListadoOberservacion(this.ListadoNinos[position].TN_id))
 
-
-        view.radarCharCaracteristicasNino.webColor = Color.BLACK
-        view.radarCharCaracteristicasNino.webColorInner = Color.BLACK
-        view.radarCharCaracteristicasNino.webLineWidthInner = 2f
-        view.radarCharCaracteristicasNino.xAxis.valueFormatter = IndexAxisValueFormatter(myArray)
-        view.radarCharCaracteristicasNino.xAxis.typeface=Tipografia
-        view.radarCharCaracteristicasNino.xAxis.textSize = 13f
-        view.radarCharCaracteristicasNino.yAxis.setDrawLabels(false)
-        view.radarCharCaracteristicasNino.description.isEnabled=false
-        view.radarCharCaracteristicasNino.animateXY(3000,3000,Easing.EasingOption.EaseInOutBack,Easing.EasingOption.EaseOutSine)
-        view.radarCharCaracteristicasNino.data= Grafico(Tipografia)
-        view.radarCharCaracteristicasNino.legend.verticalAlignment=Legend.LegendVerticalAlignment.TOP
-        view.radarCharCaracteristicasNino.legend.horizontalAlignment=Legend.LegendHorizontalAlignment.CENTER
-        view.radarCharCaracteristicasNino.legend.orientation=Legend.LegendOrientation.HORIZONTAL
-        view.radarCharCaracteristicasNino.legend.typeface=Tipografia
-        view.radarCharCaracteristicasNino.legend.textSize=15f
-        view.radarCharCaracteristicasNino.invalidate()
-
+        AplicarGrafica(Tipografia,view.radarCharCaracteristicasNino)
 
         view.sliderListadoNino.lblListaNinoNombre.typeface = Tipografia
         view.sliderListadoNino.lblListaNinoApellido.typeface = Tipografia
@@ -76,7 +61,7 @@ class slide_ninos_listado(private var context: Context, private var ListadoNinos
         view.sliderListadoNino.lblListaTelefono.typeface = Tipografia
 
         try {
-            Glide.with(context).load(Camera(context).Buscar_Foto("JPG_${this.ListadoNinos.get(position).TN_Imagen.toString()}")).into(view.sliderListadoNino.imgNinoLista)
+            Glide.with(context).load(MetodosAyuda(context).Buscar_Foto("JPG_${this.ListadoNinos.get(position).TN_Imagen.toString()}")).into(view.sliderListadoNino.imgNinoLista)
         }catch (e: NullPointerException){
             Glide.with(context).load(R.drawable.nouser).into(view.sliderListadoNino.imgNinoLista)
         }
@@ -84,6 +69,25 @@ class slide_ninos_listado(private var context: Context, private var ListadoNinos
         return view
     }
 
+    private fun AplicarGrafica(tipografia: Typeface, radarCharCaracteristicasNino: RadarChart) {
+        this.radarCharCaracteristicasNino = radarCharCaracteristicasNino
+        this.radarCharCaracteristicasNino!!.webColor = Color.BLACK
+        this.radarCharCaracteristicasNino!!.webColorInner = Color.BLACK
+        this.radarCharCaracteristicasNino!!.webLineWidthInner = 2f
+        this.radarCharCaracteristicasNino!!.xAxis.valueFormatter = IndexAxisValueFormatter(myArray)
+        this.radarCharCaracteristicasNino!!.xAxis.typeface=tipografia
+        this.radarCharCaracteristicasNino!!.xAxis.textSize = 13f
+        this.radarCharCaracteristicasNino!!.yAxis.setDrawLabels(false)
+        this.radarCharCaracteristicasNino!!.description.isEnabled=false
+        this.radarCharCaracteristicasNino!!.animateXY(3000,3000,Easing.EasingOption.EaseInOutBack,Easing.EasingOption.EaseOutSine)
+        this.radarCharCaracteristicasNino!!.data= Grafico(tipografia)
+        this.radarCharCaracteristicasNino!!.legend.verticalAlignment=Legend.LegendVerticalAlignment.TOP
+        this.radarCharCaracteristicasNino!!.legend.horizontalAlignment=Legend.LegendHorizontalAlignment.CENTER
+        this.radarCharCaracteristicasNino!!.legend.orientation=Legend.LegendOrientation.HORIZONTAL
+        this.radarCharCaracteristicasNino!!.legend.typeface=tipografia
+        this.radarCharCaracteristicasNino!!.legend.textSize=15f
+        this.radarCharCaracteristicasNino!!.invalidate()
+    }
 
     fun Grafico(tipografia: Typeface):RadarData?{
 

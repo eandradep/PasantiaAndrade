@@ -572,6 +572,10 @@
         "source": "C:\\Users\\EdisonBladimirAndrad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\b07dd7b65c2c62d60da3bfc6f0146f98\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\EdisonBladimirAndrad\\AndroidStudioProjects\\PasantiaAndrade\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registro_master_terapista.xml.flat",
+        "source": "C:\\Users\\EdisonBladimirAndrad\\AndroidStudioProjects\\PasantiaAndrade\\app\\src\\main\\res\\layout\\activity_registro_master_terapista.xml"
+    },
+    {
         "merged": "C:\\Users\\EdisonBladimirAndrad\\AndroidStudioProjects\\PasantiaAndrade\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\EdisonBladimirAndrad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\b07dd7b65c2c62d60da3bfc6f0146f98\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },

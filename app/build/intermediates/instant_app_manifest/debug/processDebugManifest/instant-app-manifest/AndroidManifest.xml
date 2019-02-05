@@ -27,11 +27,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-        <activity android:name="com.example.pasantiaandrade.Listado_Ninos" />
-        <activity android:name="com.example.pasantiaandrade.RegistrarNino" />
-        <activity android:name="com.example.pasantiaandrade.InterfazMaster" />
+        <activity android:name="com.example.pasantiaandrade.Master.Master.registro_master_terapista" />
+        <activity android:name="com.example.pasantiaandrade.Master.Nino.Listado_Ninos" />
+        <activity android:name="com.example.pasantiaandrade.Master.Nino.RegistrarNino" />
+        <activity android:name="com.example.pasantiaandrade.Master.InterfazMaster" />
         <activity
-            android:name="com.example.pasantiaandrade.seleccion_usuarios"
+            android:name="com.example.pasantiaandrade.Login_Usuario"
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

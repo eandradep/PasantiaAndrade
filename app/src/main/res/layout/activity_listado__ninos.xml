@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Listado_Ninos"
+    tools:context=".Master.Nino.Listado_Ninos"
     android:background="@color/FondoMaster">
+
+
+
 
 <android.support.v7.widget.CardView
     android:layout_width="match_parent"

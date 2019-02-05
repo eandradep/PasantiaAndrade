@@ -1,4 +1,4 @@
-package com.example.pasantiaandrade.Adaptadores.Slider
+package com.example.pasantiaandrade.Adaptador.Sliders
 
 import android.content.Context
 import android.content.Intent
@@ -13,7 +13,7 @@ import android.widget.Toast
 import com.example.pasantiaandrade.DBHelper.DBHelper
 
 import com.example.pasantiaandrade.R
-import com.example.pasantiaandrade.InterfazMaster
+import com.example.pasantiaandrade.Master.InterfazMaster
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.slide_tipos_registro.view.*
 

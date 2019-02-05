@@ -1,4 +1,4 @@
-package com.example.pasantiaandrade
+package com.example.pasantiaandrade.Master
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -11,7 +11,13 @@ import android.text.Editable
 import android.view.WindowManager
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.DBHelper.DBHelper
+import com.example.pasantiaandrade.Master.Nino.Listado_Ninos
+import com.example.pasantiaandrade.Master.Nino.RegistrarNino
+import com.example.pasantiaandrade.MetodosAyuda
 import com.example.pasantiaandrade.Model.UsuarioMT
+import com.example.pasantiaandrade.R
+import com.example.pasantiaandrade.Login_Usuario
+import com.example.pasantiaandrade.Master.Master.registro_master_terapista
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.activity_interfaz_master.*
 import java.text.SimpleDateFormat
@@ -52,13 +58,15 @@ class InterfazMaster : AppCompatActivity() {
 
         btnCreateChildProfileMaster.setOnClickListener { startActivity(Intent(this@InterfazMaster, RegistrarNino::class.java).putExtra("MasterID",ID)) }
 
+        btnCreateTerapistaProfileMaster.setOnClickListener { startActivity(Intent(this@InterfazMaster, registro_master_terapista::class.java).putExtra("MasterID",ID))  }
+
         btnListadoNinosMaster.setOnClickListener { startActivity(Intent(this@InterfazMaster, Listado_Ninos::class.java))  }
 
 
     }
 
     private fun SingOut() {
-        val intent = Intent(this@InterfazMaster, seleccion_usuarios::class.java)
+        val intent = Intent(this@InterfazMaster, Login_Usuario::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(Intent(intent))
     }
@@ -104,7 +112,7 @@ class InterfazMaster : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        val cam = Camera(this)
+        val cam = MetodosAyuda(this)
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             val imageBitmap = data!!.extras.get("data") as Bitmap
             FotoTemporal = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
@@ -141,7 +149,7 @@ class InterfazMaster : AppCompatActivity() {
     }
 
     private fun Perfil() {
-        val camara = Camera(this@InterfazMaster)
+        val camara = MetodosAyuda(this@InterfazMaster)
         try {
             val people :UsuarioMT? = intent.extras.getSerializable("master") as? UsuarioMT
             txtNombreMasterProfile.text = Editable.Factory.getInstance().newEditable(people!!.TM_Nombre.toString())
