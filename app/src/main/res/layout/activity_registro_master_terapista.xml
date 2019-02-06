@@ -8,184 +8,224 @@
     android:gravity="center"
     android:orientation="vertical">
 
-
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/imgRegisterChil"
-        android:layout_width="130dp"
-        android:layout_height="135dp"
-        android:layout_margin="10dp"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="3dp"
-        android:src="@drawable/nouser"/>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_marginHorizontal="2dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Master"
-        android:visibility="invisible"/>
-
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_margin="2dp">
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Nombre Usuario"
-            android:gravity="center"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Apellido Usuario"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        android:hint="# Telefono Usuario"
-        android:gravity="center"/>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_margin="3dp">
-
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:layout_marginHorizontal="2dp"/>
-
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:layout_marginHorizontal="3dp"/>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password y Confirmacion"/>
-
-    <android.support.v7.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardElevation="15dp"
-        app:cardCornerRadius="15dp">
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/SecundarioMaster">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/secondView"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:background="@color/SecundarioMaster">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/btnRegistrarNino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/savedata"
-                    android:contentDescription="BotonGuardar"/>
-
-                <TextView
-                    android:id="@+id/lblRegistrarNino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Registrar"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#2A6171"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/btnTomarFotoRegistroNino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/editphoto"
-                    android:contentDescription="Boton Tomar Fotos"/>
-
-                <TextView
-                    android:id="@+id/lblTomarFotoRegistroNino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TomarFotoPerfil"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#2A6171"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/btnCancelarRegistroNino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/cancelar"
-                    android:clickable="false"
-                    android:contentDescription="Boton Cancelar"/>
-
-                <TextView
-                    android:id="@+id/lblCancelarRegistroNino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cancelar"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#2A6171" />
-
-            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgRegisterTerapista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="40dp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="5dp"
+                android:src="@drawable/nouser"/>
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary" />
 
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/secondView"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxMaster"
+                android:layout_marginHorizontal="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master"
+                android:enabled="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="2dp">
+
+                <EditText
+                    android:id="@+id/txtRegistroTerapistaNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Nombre Usuario"
+                    android:layout_marginHorizontal="7dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/txtRegistroTerapistaApellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Apellido Usuario"
+                    android:layout_marginHorizontal="7dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/txtRegistroTerapistaTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="# Telefono Usuario"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="3dp">
+
+
+                <EditText
+                    android:id="@+id/txtRegistroTerapistaPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:layout_marginHorizontal="7dp"/>
+
+
+                <EditText
+                    android:id="@+id/txtRegistroTerapistaPasswordC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:layout_marginHorizontal="7dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblRegistroTerapistaPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password y Confirmacion"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@color/SecundarioMaster">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btnRegistrarTerapista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/savedata"
+                            android:contentDescription="BotonGuardar"/>
+
+                        <TextView
+                            android:id="@+id/lblRegistrarTerapista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Registrar"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#2A6171"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btnTomarFotoRegistroTerapista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/editphoto"
+                            android:contentDescription="Boton Tomar Fotos"/>
+
+                        <TextView
+                            android:id="@+id/lblTomarFotoRegistroTerapista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TomarFotoPerfil"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#2A6171"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btnCancelarRegistroTerapista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cancelar"
+                            android:clickable="false"
+                            android:contentDescription="Boton Cancelar"/>
+
+                        <TextView
+                            android:id="@+id/lblCancelarRegistroTerapista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancelar"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#2A6171" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>

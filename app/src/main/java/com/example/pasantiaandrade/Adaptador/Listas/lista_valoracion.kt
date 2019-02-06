@@ -42,6 +42,7 @@ private val mContext:Context
     override fun getItem(position: Int): Any? {
         return "TEST"
     }
+
     override fun getItemId(position: Int): Long {
         return position.toLong()
     }

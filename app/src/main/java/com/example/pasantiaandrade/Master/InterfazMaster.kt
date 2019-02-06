@@ -18,6 +18,7 @@ import com.example.pasantiaandrade.Model.UsuarioMT
 import com.example.pasantiaandrade.R
 import com.example.pasantiaandrade.Login_Usuario
 import com.example.pasantiaandrade.Master.Master.registro_master_terapista
+import com.example.pasantiaandrade.listadoTerapistas
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.activity_interfaz_master.*
 import java.text.SimpleDateFormat
@@ -61,6 +62,8 @@ class InterfazMaster : AppCompatActivity() {
         btnCreateTerapistaProfileMaster.setOnClickListener { startActivity(Intent(this@InterfazMaster, registro_master_terapista::class.java).putExtra("MasterID",ID))  }
 
         btnListadoNinosMaster.setOnClickListener { startActivity(Intent(this@InterfazMaster, Listado_Ninos::class.java))  }
+
+        btnListadoTerapistaProfileMaster.setOnClickListener { startActivity(Intent(this@InterfazMaster, listadoTerapistas::class.java)) }
 
 
     }
@@ -176,6 +179,7 @@ class InterfazMaster : AppCompatActivity() {
         lblDashMasterProfile.typeface =typeface
         lblAgregarNinoMasterProfile.typeface=typeface
         lblListadoNinoMaster.typeface = typeface
+        lblAgregarTerapistaMasterProfile.typeface=typeface
     }
 
 }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:2:1-14:12
 MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:2:1-13:12
 MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-appcompat-v7-0.10.8.aar\ab699dc97178c1e899ea88e0e9ec96fc\AndroidManifest.xml:2:1-13:12
@@ -55,20 +55,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\EdisonBladimir
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01dbc44a095612311f44e762defe9d65\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\944e5ded5d75422ee400d0db272e1e16\AndroidManifest.xml:17:1-22:12
 MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-coroutines-0.10.8.aar\728e3a8077179f9b712b2fe9128a7167\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:2:11-69
@@ -89,7 +89,7 @@ ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\a
 	android:name
 		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:10:9-65
 application
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:13:5-33:19
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:13:5-34:19
 MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:11:5-12:19
 MERGED from [com.sdsmdg.tastytoast:tastytoast:0.1.1] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\tastytoast-0.1.1.aar\c420b8d0bf4423338795d403156cf141\AndroidManifest.xml:11:5-12:19
 MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\EdisonBladimirAndrad\.gradle\caches\transforms-1\files-1.1\anko-0.10.8.aar\0bb2a60482689599fa6f20e032851bf4\AndroidManifest.xml:11:5-20
@@ -140,38 +140,42 @@ MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\EdisonBladimirA
 		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
 		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:19:9-68
+activity#com.example.pasantiaandrade.listadoTerapistas
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:20:9-64
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:20:19-52
 activity#com.example.pasantiaandrade.Master.Master.registro_master_terapista
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:20:9-86
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:21:9-77
 	android:name
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:20:19-74
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:21:19-74
 activity#com.example.pasantiaandrade.Master.Nino.Listado_Ninos
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:21:9-63
-	android:name
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:21:19-60
-activity#com.example.pasantiaandrade.Master.Nino.RegistrarNino
 ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:22:9-63
 	android:name
 		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:22:19-60
+activity#com.example.pasantiaandrade.Master.Nino.RegistrarNino
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:23:9-63
+	android:name
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:23:19-60
 activity#com.example.pasantiaandrade.Master.InterfazMaster
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:23:9-59
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:24:9-59
 	android:name
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:23:19-56
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:24:19-56
 activity#com.example.pasantiaandrade.Login_Usuario
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:24:9-32:20
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:screenOrientation
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:26:13-50
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:27:13-50
 	android:name
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:25:13-42
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:26:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml:31:27-74
 uses-sdk
 INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\EdisonBladimirAndrad\AndroidStudioProjects\PasantiaAndrade\app\src\main\AndroidManifest.xml

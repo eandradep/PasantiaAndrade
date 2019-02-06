@@ -26,6 +26,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        <activity android:name="com.example.pasantiaandrade.listadoTerapistas" />
         <activity android:name="com.example.pasantiaandrade.Master.Master.registro_master_terapista" />
         <activity android:name="com.example.pasantiaandrade.Master.Nino.Listado_Ninos" />
         <activity android:name="com.example.pasantiaandrade.Master.Nino.RegistrarNino" />

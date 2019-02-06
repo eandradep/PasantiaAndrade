@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Master.Master.registro_master_terapista"></activity>
+        <activity android:name=".listadoTerapistas"></activity>
+        <activity android:name=".Master.Master.registro_master_terapista" />
         <activity android:name=".Master.Nino.Listado_Ninos" />
         <activity android:name=".Master.Nino.RegistrarNino" />
         <activity android:name=".Master.InterfazMaster" />
