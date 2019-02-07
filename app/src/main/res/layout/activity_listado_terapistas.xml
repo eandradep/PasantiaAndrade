@@ -12,7 +12,8 @@
         android:layout_height="match_parent"
         android:layout_toLeftOf="@+id/secondView"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -37,7 +38,8 @@
                 android:ems="10"
                 android:textAlignment="center"
                 android:layout_marginHorizontal="2dp"
-                android:text="ID Usuario"/>
+                android:text="ID Usuario"
+                tools:ignore="HardcodedText,UnusedAttribute" />
 
             <TextView
                 android:id="@+id/lblTipoListaTerapista"
@@ -46,7 +48,8 @@
                 android:ems="10"
                 android:text="Tipo Usuario"
                 android:textAlignment="center"
-                android:layout_marginHorizontal="2dp" />
+                android:layout_marginHorizontal="2dp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
 
         </LinearLayout>
 
@@ -64,7 +67,8 @@
                 android:ems="10"
                 android:textAlignment="center"
                 android:layout_marginHorizontal="2dp"
-                android:autofillHints="Nombre Terapista"/>
+                android:autofillHints="Nombre Terapista"
+                tools:ignore="LabelFor,TextFields,UnusedAttribute" />
 
             <EditText
                 android:id="@+id/txtApellidoListaTerapista"
@@ -73,7 +77,9 @@
                 android:ems="10"
                 android:textAlignment="center"
                 android:layout_marginHorizontal="2dp"
-                android:autofillHints="Apellido Terapista"/>
+                android:autofillHints="Apellido Terapista"
+                tools:ignore="LabelFor,TextFields,UnusedAttribute" />
+
         </LinearLayout>
 
         <EditText
@@ -83,7 +89,8 @@
             android:ems="10"
             android:textAlignment="center"
             android:layout_marginHorizontal="2dp"
-            android:autofillHints="Telefono Terapista"/>
+            android:autofillHints="Telefono Terapista"
+            tools:ignore="LabelFor,TextFields,UnusedAttribute" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -100,7 +107,8 @@
                 android:textAlignment="center"
                 android:layout_marginHorizontal="2dp"
                 android:inputType="textPassword"
-                android:autofillHints="Password Terapista"/>
+                android:autofillHints="Password Terapista"
+                tools:ignore="LabelFor,UnusedAttribute" />
 
             <EditText
                 android:id="@+id/txtPasswordCListaTerapista"
@@ -110,7 +118,8 @@
                 android:textAlignment="center"
                 android:layout_marginHorizontal="2dp"
                 android:inputType="textPassword"
-                android:autofillHints="Confirmacion Terapista"/>
+                android:autofillHints="Confirmacion Terapista"
+                tools:ignore="LabelFor,UnusedAttribute" />
         </LinearLayout>
 
         <android.support.v7.widget.CardView
@@ -132,7 +141,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
 
                     <ImageButton
                         android:id="@+id/btnTomarFotoTerapistaLista"
@@ -140,7 +150,8 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/editphoto"
                         android:clickable="false"
-                        android:contentDescription="TODO" />
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription,HardcodedText" />
 
                     <TextView
                         android:id="@+id/lblFotoTerapistaLista"
@@ -149,7 +160,8 @@
                         android:text="Foto"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="#2A6171" />
+                        android:textColor="#2A6171"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                 </LinearLayout>
 
@@ -158,14 +170,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
 
                     <ImageButton
                         android:id="@+id/btnGuardarCambiosTerapistaLista"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/savedata"
-                        android:contentDescription="TODO" />
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription,HardcodedText" />
 
                     <TextView
                         android:id="@+id/lblGuardarTerapistaLista"
@@ -174,7 +188,8 @@
                         android:text="Guardar"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="#2A6171"/>
+                        android:textColor="#2A6171"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                 </LinearLayout>
 
@@ -183,7 +198,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
 
                     <ImageButton
                         android:id="@+id/btnCerrarListadonTerapista"
@@ -191,7 +207,8 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/cancelar"
                         android:clickable="false"
-                        android:contentDescription="Boton Cancelar"/>
+                        android:contentDescription="Boton Cancelar"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/lblCerrarListadonTerapista"
@@ -200,7 +217,8 @@
                         android:text="Salir"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="#2A6171" />
+                        android:textColor="#2A6171"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                 </LinearLayout>
 
@@ -222,8 +240,8 @@
         android:layout_height="match_parent"
         android:layout_toRightOf="@+id/secondView"
         android:gravity="center"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ListView
             android:id="@+id/listViewTerapistas"

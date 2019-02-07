@@ -3,11 +3,11 @@ package com.example.pasantiaandrade.master.nino
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.ViewPager
-import com.example.pasantiaandrade.DBHelper.DBHelper
-import com.example.pasantiaandrade.adaptador.Sliders.SlideListadoNinos
+import com.example.pasantiaandrade.dbhelper.DBHelper
+import com.example.pasantiaandrade.adaptador.sliders.SlideListadoNinos
 import com.example.pasantiaandrade.R
 
-class Listado_Ninos : AppCompatActivity() {
+class ListadoNinos : AppCompatActivity() {
 
 
     private lateinit var viewPager: ViewPager

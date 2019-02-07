@@ -7,9 +7,6 @@
     tools:context=".master.nino.ListadoNinos"
     android:background="@color/FondoMaster">
 
-
-
-
 <android.support.v7.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="match_parent"

@@ -13,7 +13,8 @@
         android:layout_height="match_parent"
         android:layout_toLeftOf="@+id/secondView"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/imgRegisterChil"
@@ -32,8 +33,9 @@
             android:layout_marginHorizontal="10dp"
             android:inputType="textPersonName"
             android:hint="Nombres del Nino"
-            android:textSize="20dp"
-            android:autofillHints="Nombre Nino"/>
+            android:textSize="20sp"
+            android:autofillHints="Nombre Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <EditText
             android:id="@+id/txtRegistroApellidosNino"
@@ -43,8 +45,9 @@
             android:layout_marginHorizontal="10dp"
             android:inputType="textPersonName"
             android:hint="Apellidos del Nino"
-            android:textSize="20dp"
-            android:autofillHints="Apellido Nino"/>
+            android:textSize="20sp"
+            android:autofillHints="Apellido Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <EditText
             android:id="@+id/txtFechaNacimientoNino"
@@ -54,8 +57,9 @@
             android:hint="dd/mm/yyyy"
             android:gravity="center"
             android:layout_marginHorizontal="10dp"
-            android:textSize="20dp"
-            android:autofillHints="Fecha Nacimiento Nino"/>
+            android:textSize="20sp"
+            android:autofillHints="Fecha Nacimiento Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <EditText
             android:id="@+id/txtTelefonoRegistroNino"
@@ -65,8 +69,9 @@
             android:hint="Numero Telefono"
             android:gravity="center"
             android:layout_marginHorizontal="10dp"
-            android:textSize="20dp"
-            android:autofillHints="Telefono Nino"/>
+            android:textSize="20sp"
+            android:autofillHints="Telefono Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <EditText
             android:id="@+id/txtDireccionRegistroNino"
@@ -74,11 +79,11 @@
             android:layout_height="wrap_content"
             android:hint="Direccion Del Nino"
             android:gravity="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:layout_marginHorizontal="10dp"
             android:inputType="textPersonName"
-            android:autofillHints="Direccion Nino"/>
-
+            android:autofillHints="Direccion Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
     </LinearLayout>
 
@@ -95,33 +100,37 @@
         android:layout_height="match_parent"
         android:layout_toRightOf="@+id/secondView"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <TextView
             android:id="@+id/lblTituloValoracionInicalNino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Valoracion Inicial"
-            android:autofillHints="Titulo Valoracion Inicial Nino"/>
+            android:autofillHints="Titulo Valoracion Inicial Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <TextView
             android:id="@+id/lblFechaHoraActualRegistroNino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="El Registro tomara la Fecha y Hora Actual"/>
+            android:textSize="20sp"
+            android:text="El Registro tomara la Fecha y Hora Actual"
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/txtAreaValoracionInicial"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="15dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:inputType="text|textMultiLine"
             android:gravity="top"
             android:hint="Observacion Inicial"
-            android:autofillHints="Valoracion Inicial Nino"/>
+            android:autofillHints="Valoracion Inicial Nino"
+            tools:ignore="HardcodedText,UnusedAttribute" />
 
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
@@ -142,14 +151,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
 
                     <ImageButton
                         android:id="@+id/btnRegistrarNino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/savedata"
-                        android:contentDescription="BotonGuardar"/>
+                        android:contentDescription="BotonGuardar"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/lblRegistrarNino"
@@ -158,7 +169,8 @@
                         android:text="Registrar"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="#2A6171"/>
+                        android:textColor="#2A6171"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                 </LinearLayout>
 
@@ -167,14 +179,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
 
                     <ImageButton
                         android:id="@+id/btnTomarFotoRegistroNino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/editphoto"
-                        android:contentDescription="Boton Tomar Fotos"/>
+                        android:contentDescription="Boton Tomar Fotos"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/lblTomarFotoRegistroNino"
@@ -183,7 +197,8 @@
                         android:text="TomarFotoPerfil"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="#2A6171"/>
+                        android:textColor="#2A6171"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                 </LinearLayout>
 
@@ -192,7 +207,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
 
                     <ImageButton
                         android:id="@+id/btnCancelarRegistroNino"
@@ -200,16 +216,18 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/cancelar"
                         android:clickable="false"
-                        android:contentDescription="Boton Cancelar"/>
+                        android:contentDescription="Boton Cancelar"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/lblCancelarRegistroNino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cancelar"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="#2A6171" />
+                        android:textColor="#2A6171"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 

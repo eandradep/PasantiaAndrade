@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/sliderListadoNino"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp"
-        android:background="@color/SecundarioMaster">
-
+        android:background="@color/SecundarioMaster"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:id="@+id/firstLayout"
@@ -20,7 +21,8 @@
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/secondView"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
 
             <com.github.mikephil.charting.charts.RadarChart
                 android:id="@+id/radarCharCaracteristicasNino"
@@ -43,7 +45,8 @@
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/secondView"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -55,7 +58,6 @@
                     android:layout_alignBottom="@+id/MitadHorizontal"
                     android:gravity="center"
                     android:orientation="vertical">
-
 
                             <de.hdodenhof.circleimageview.CircleImageView
                                 android:id="@+id/imgNinoLista"
@@ -78,7 +80,7 @@
                                     android:layout_height="wrap_content"
                                     android:ems="10"
                                     android:textAlignment="center"
-                                    android:textSize="20dp" />
+                                    android:textSize="20sp" />
 
                                 <TextView
                                     android:id="@+id/lblListaNinoApellido"
@@ -86,11 +88,9 @@
                                     android:layout_height="wrap_content"
                                     android:ems="10"
                                     android:textAlignment="center"
-                                    android:textSize="20dp" />
+                                    android:textSize="20sp" />
 
                             </LinearLayout>
-
-
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -106,7 +106,8 @@
                                     android:ems="10"
                                     android:text="TextView"
                                     android:textAlignment="center"
-                                    android:textSize="20dp" />
+                                    android:textSize="20sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/lblListaNinoEdad"
@@ -115,7 +116,8 @@
                                     android:ems="2"
                                     android:text="Edad"
                                     android:textAlignment="center"
-                                    android:textSize="20dp" />
+                                    android:textSize="20sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/lblListaTelefono"
@@ -124,7 +126,8 @@
                                     android:ems="10"
                                     android:text="TextView"
                                     android:textAlignment="center"
-                                    android:textSize="20dp" />
+                                    android:textSize="20sp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -132,7 +135,9 @@
                                 android:id="@+id/btnSalirListadoNinos"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:src="@drawable/cancelar"/>
+                                android:src="@drawable/cancelar"
+                                android:contentDescription="Boton Salir Listado"
+                                tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -154,8 +159,6 @@
                         android:id="@+id/lstObservacionesNinos"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
-
-
 
                 </LinearLayout>
 
