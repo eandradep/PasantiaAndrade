@@ -17,13 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".listadoTerapistas"></activity>
-        <activity android:name=".Master.Master.registro_master_terapista" />
-        <activity android:name=".Master.Nino.Listado_Ninos" />
-        <activity android:name=".Master.Nino.RegistrarNino" />
-        <activity android:name=".Master.InterfazMaster" />
+        <activity android:name=".master.terapista.ListadoTerapistas"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".master.terapista.RegistroTerapista"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".master.nino.ListadoNinos"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".master.nino.RegistrarNino"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".master.InterfazMaster"
+            android:screenOrientation="landscape"/>
         <activity
-            android:name=".Login_Usuario"
+            android:name=".LoginUsuario"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

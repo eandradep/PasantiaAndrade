@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/FondoMaster"
-    tools:context=".Master.Nino.RegistrarNino">
+    tools:context=".master.nino.RegistrarNino">
 
     <LinearLayout
         android:id="@+id/firstLayout"
@@ -32,7 +32,8 @@
             android:layout_marginHorizontal="10dp"
             android:inputType="textPersonName"
             android:hint="Nombres del Nino"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:autofillHints="Nombre Nino"/>
 
         <EditText
             android:id="@+id/txtRegistroApellidosNino"
@@ -42,7 +43,8 @@
             android:layout_marginHorizontal="10dp"
             android:inputType="textPersonName"
             android:hint="Apellidos del Nino"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:autofillHints="Apellido Nino"/>
 
         <EditText
             android:id="@+id/txtFechaNacimientoNino"
@@ -52,7 +54,8 @@
             android:hint="dd/mm/yyyy"
             android:gravity="center"
             android:layout_marginHorizontal="10dp"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:autofillHints="Fecha Nacimiento Nino"/>
 
         <EditText
             android:id="@+id/txtTelefonoRegistroNino"
@@ -62,7 +65,8 @@
             android:hint="Numero Telefono"
             android:gravity="center"
             android:layout_marginHorizontal="10dp"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:autofillHints="Telefono Nino"/>
 
         <EditText
             android:id="@+id/txtDireccionRegistroNino"
@@ -72,7 +76,8 @@
             android:gravity="center"
             android:textSize="20dp"
             android:layout_marginHorizontal="10dp"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:autofillHints="Direccion Nino"/>
 
 
     </LinearLayout>
@@ -97,7 +102,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="Valoracion Inicial" />
+            android:text="Valoracion Inicial"
+            android:autofillHints="Titulo Valoracion Inicial Nino"/>
 
         <TextView
             android:id="@+id/lblFechaHoraActualRegistroNino"
@@ -114,7 +120,8 @@
             android:textSize="20dp"
             android:inputType="text|textMultiLine"
             android:gravity="top"
-            android:hint="Observacion Inicial"/>
+            android:hint="Observacion Inicial"
+            android:autofillHints="Valoracion Inicial Nino"/>
 
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"

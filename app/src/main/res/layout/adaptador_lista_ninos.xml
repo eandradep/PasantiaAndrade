@@ -43,10 +43,11 @@
                     <EditText
                         android:id="@+id/txtAreaValoraciones"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="45dp"
                         android:textSize="20dp"
                         android:inputType="text|textMultiLine"
                         android:gravity="top"
+                        android:textAlignment="center"
                         android:hint="Observacion Inicial"/>
 
 

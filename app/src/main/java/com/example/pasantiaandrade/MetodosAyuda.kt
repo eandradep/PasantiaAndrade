@@ -8,6 +8,8 @@ import java.io.FileInputStream
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 import java.io.IOException
+import java.util.*
+
 class MetodosAyuda (var context: Context) {
 
     fun bitmapToFile(bitmap:Bitmap,Nombre:String){
@@ -25,7 +27,7 @@ class MetodosAyuda (var context: Context) {
         }
     }
 
-    fun Buscar_Foto(Nombre:String):Bitmap {
+    fun buscarFoto(Nombre:String):Bitmap {
         var b: Bitmap? = null
         val fis: FileInputStream
         try {
@@ -34,12 +36,24 @@ class MetodosAyuda (var context: Context) {
             fis.close()
 
         } catch (e: FileNotFoundException) {
-            Log.d("Error", "file not found");
+            Log.d("Error", "file not found")
             e.printStackTrace()
         } catch (e: IOException) {
-            Log.d("Error", "io exception");
+            Log.d("Error", "io exception")
             e.printStackTrace()
         }
         return b!!
+    }
+
+
+    fun calcularEdad(fecha:Calendar): String {
+        val fechaActual = Calendar.getInstance()
+        var years = fechaActual.get(Calendar.YEAR) - fecha.get(Calendar.YEAR)
+        val months = fechaActual.get(Calendar.MONTH) - fecha.get(Calendar.MONTH)
+        val days = fechaActual.get(Calendar.DAY_OF_MONTH) - fecha.get(Calendar.DAY_OF_MONTH)
+        if (months < 0 || months == 0 && days < 0) {
+            years--
+        }
+        return years.toString()
     }
 }

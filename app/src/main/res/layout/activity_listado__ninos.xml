@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Master.Nino.Listado_Ninos"
+    tools:context=".master.nino.ListadoNinos"
     android:background="@color/FondoMaster">
 
 
@@ -16,6 +16,8 @@
     app:cardElevation="15dp"
     app:cardCornerRadius="15dp"
     android:layout_margin="5dp">
+
+
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPageListadoNino"

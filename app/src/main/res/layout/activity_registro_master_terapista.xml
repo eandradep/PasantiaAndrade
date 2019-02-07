@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Master.Master.registro_master_terapista"
+    tools:context=".master.terapista.RegistroTerapista"
     android:gravity="center"
     android:orientation="vertical">
 
