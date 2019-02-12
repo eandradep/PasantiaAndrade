@@ -58,6 +58,7 @@
                 android:text="A.A.N.S.D"
                 android:layout_margin="10dp"
                 android:textSize="35sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <LinearLayout
@@ -72,6 +73,7 @@
                     android:textSize="20sp"
                     android:text="Titulo Registro"
                     android:layout_marginVertical="5dp"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -81,6 +83,7 @@
                     android:textSize="20sp"
                     android:text="Descripcion Registro"
                     android:layout_marginVertical="5dp"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -90,6 +93,7 @@
                     android:text="Password"
                     android:textSize="20sp"
                     android:layout_marginVertical="5dp"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <EditText
@@ -98,6 +102,7 @@
                     android:layout_height="match_parent"
                     android:inputType="textPassword"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     android:layout_marginHorizontal="30dp"
                     tools:ignore="Autofill,LabelFor,UnusedAttribute" />
 

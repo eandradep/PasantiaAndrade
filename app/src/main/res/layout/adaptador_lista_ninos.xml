@@ -41,6 +41,8 @@
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:ems="10"
+                        android:textColor="@color/colorLetras"
+                        android:textStyle="bold"
                         tools:ignore="Autofill,LabelFor,TextFields" />
 
                     <EditText
@@ -50,6 +52,8 @@
                         android:textSize="20sp"
                         android:inputType="text|textMultiLine"
                         android:gravity="top"
+                        android:textColor="@color/colorLetras"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:hint="Observacion Inicial"
                         tools:ignore="Autofill,HardcodedText" />

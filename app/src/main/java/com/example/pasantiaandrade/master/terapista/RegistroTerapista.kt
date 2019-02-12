@@ -84,9 +84,9 @@ class RegistroTerapista : AppCompatActivity() {
             if (txtRegistroTerapistaPassword.text.toString() == txtRegistroTerapistaPasswordC.text.toString()){
                 if (null != urlImagen){
                     if (!master)
-                        dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"terapista",urlImagen.toString(),txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
+                        dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"Terapista",urlImagen.toString(),txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
                     else
-                        dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"master",urlImagen.toString(),txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
+                        dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"Master",urlImagen.toString(),txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
                     TastyToast.makeText(this@RegistroTerapista, "Registro Creado", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
                     this.finish()
                 }
@@ -96,9 +96,9 @@ class RegistroTerapista : AppCompatActivity() {
                     builder.setTitle("Confirmar Cambios....").setMessage("Usted esta Seguro de Registrar al Nino sin un Fotografia...??")
                     builder.setPositiveButton("SI"){ _, _ ->
                         if (!master)
-                            dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"terapista","none",txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
+                            dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"Terapista","none",txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
                         else
-                            dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"master","none",txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
+                            dbHelper.addTerapistaMaster(Terapista(0,txtRegistroTerapistaNombre.text.toString(),txtRegistroTerapistaApellido.text.toString(),"Master","none",txtRegistroTerapistaTelefono.text.toString(),txtRegistroTerapistaPasswordC.text.toString()))
                         TastyToast.makeText(this@RegistroTerapista, "Registro Creado", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
                         this.finish()
                     }

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pasantiaandrade">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.CAMERA"
@@ -17,16 +18,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".master.terapista.ListadoTerapistas"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".master.terapista.RegistroTerapista"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".master.nino.ListadoNinos"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".master.nino.RegistrarNino"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".master.InterfazMaster"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".TerapistaInterfaz"
+            android:label="@string/title_activity_terapista_interfaz"
+            android:theme="@style/NoActionBar"></activity>
+        <activity
+            android:name=".InterfazTerapista"
+            android:label="@string/title_activity_interfaz_terapista"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".SeleccionDispositivoBuetooth" />
+        <activity
+            android:name=".master.terapista.ListadoTerapistas"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".master.terapista.RegistroTerapista"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".master.nino.ListadoNinos"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".master.nino.RegistrarNino"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".master.InterfazMaster"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".LoginUsuario"
             android:screenOrientation="landscape">

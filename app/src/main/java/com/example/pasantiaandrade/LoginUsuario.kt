@@ -23,7 +23,7 @@ class LoginUsuario : AppCompatActivity() {
 
         this.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
         db = DBHelper(this)
-        if (db.getTask("patito123","master").nombre.isNullOrEmpty()) crearUsuarios(db)
+        if (db.getTask("patito123","Master").nombre.isNullOrEmpty()) crearUsuarios(db)
         viewPager = findViewById(R.id.viewPageTipoRegistro)
         viewPager.adapter = SlideTipoLogin(this)
 
@@ -31,7 +31,10 @@ class LoginUsuario : AppCompatActivity() {
     }
 
     private fun crearUsuarios(db: DBHelper) {
-        db.addTerapistaMaster(Terapista(0,"Edison Bladimir","Andrade Prieto","master","none","0998275721","patito123"))
+        db.addTerapistaMaster(Terapista(0,"Edison Bladimir","Andrade Prieto","Master","none","0998275721","patito123"))
+        db.addTerapistaMaster(Terapista(0,"Edison","Andrade ","Terapista","none","0998275721","abcde"))
+        db.addTerapistaMaster(Terapista(0,"Bladimir","Andrade","Terapista","none","0998275721","12345"))
+        db.addTerapistaMaster(Terapista(0,"Bladimir","Andrade Prieto","Terapista","none","0998275721","abcd1234"))
 
         db.addNino(Nino(0,"Andres","Cardenas","14/08/1994","none","0998275721","Ricaurte"))
         db.addObservacion(Observacion(0,1,1,"01/02/19","Registro Inicial"))

@@ -6,5 +6,6 @@
     <color name="FondoMaster">#D7F7F5</color>
     <color name="SecundarioMaster">#75CAC3</color>
     <color name="terciarioMaster">#EA5184</color>
+    <color name="colorLetras">#2A6171</color>
     <color name="blanco">#ffff</color>
 </resources>

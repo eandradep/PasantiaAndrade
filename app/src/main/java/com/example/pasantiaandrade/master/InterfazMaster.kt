@@ -157,7 +157,7 @@ class InterfazMaster : AppCompatActivity() {
     private fun cargarPerfil() {
         val camara = MetodosAyuda(this@InterfazMaster)
         try {
-            val people :Terapista? = intent.extras.getSerializable("master") as? Terapista
+            val people :Terapista? = intent.extras.getSerializable("Master") as? Terapista
             txtNombreMasterProfile.text = Editable.Factory.getInstance().newEditable(people!!.nombre.toString())
             txtApellidoMasterProfile.text = Editable.Factory.getInstance().newEditable(people.apellido.toString())
             txtPasswordMasterProfile.text = Editable.Factory.getInstance().newEditable(people.password.toString())

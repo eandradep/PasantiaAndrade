@@ -11,10 +11,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.Toast
 import com.example.pasantiaandrade.dbhelper.DBHelper
 
 import com.example.pasantiaandrade.R
+import com.example.pasantiaandrade.TerapistaInterfaz
 import com.example.pasantiaandrade.master.InterfazMaster
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.slide_tipos_registro.view.*
@@ -34,12 +34,11 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
     override fun isViewFromObject(view: View, o: Any): Boolean {
         return view === o as LinearLayout
     }
+
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val view = layoutInflater.inflate(R.layout.slide_tipos_registro, container, false)
-
         val typeface = Typeface.createFromAsset(context.assets, "fonts/tipografia.otf")
-
         view.sliderTipoRegistro.setBackgroundColor(coloresFondo[position])
         view.slideTipoRegistroImagen.setImageResource(listaImagenes[position])
         view.slideTipoRegistroTitulo.text = titulos[position]
@@ -57,24 +56,27 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
     private fun accederVentana(passwordUsuario: String, position: Int) {
         if(!passwordUsuario.isEmpty()){
             when (position) {
-                0 -> {
-                    Toast.makeText(context, "El Password es: $passwordUsuario, para acceder como terapista", Toast.LENGTH_SHORT).show()
-                }
-                1 -> {
-                    val usuario = DBHelper(context).getTask(passwordUsuario, "master")
-                    if (usuario.nombre.isNullOrEmpty() or usuario.nombre.isNullOrBlank())
-                        TastyToast.makeText(context, "Acceso Denegado", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
-                    else {
-                        TastyToast.makeText(context, "Acceso Consedido Master", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
-                        val intent = Intent(context, InterfazMaster::class.java)
-                        intent.flags = FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK
-                        intent.putExtra("master",usuario)
-                        context.startActivity(intent)
-                    }
-                }
+                0 ->cargarVentana(passwordUsuario,"Terapista",null,TerapistaInterfaz::class.java)
+                1 ->cargarVentana(passwordUsuario,"Master",InterfazMaster::class.java,null)
             }
         }else{
             TastyToast.makeText(context, "Ingrese su Password", TastyToast.LENGTH_SHORT, TastyToast.INFO)
+        }
+    }
+
+    private fun cargarVentana(userPassword: String, userTipo: String, java: Class<InterfazMaster>?, java1: Class<TerapistaInterfaz>?) {
+        val usuario = DBHelper(context).getTask(userPassword, userTipo)
+        if (usuario.nombre.isNullOrEmpty() or usuario.nombre.isNullOrBlank())
+            TastyToast.makeText(context, "Acceso Denegado", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
+        else {
+            TastyToast.makeText(context, "Acceso Consedido $userTipo", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
+            val intent = if (java == null)
+                Intent(context, java1)
+            else
+                Intent(context, java)
+            intent.flags = FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK
+            intent.putExtra(userTipo,usuario)
+            context.startActivity(intent)
         }
     }
 

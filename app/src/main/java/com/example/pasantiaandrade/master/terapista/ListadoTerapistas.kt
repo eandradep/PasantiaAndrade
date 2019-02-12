@@ -88,7 +88,7 @@ class ListadoTerapistas : AppCompatActivity(){
         if (terapista.id.toString().toInt() == intent.extras.getInt("MasterID")){
             TastyToast.makeText(this@ListadoTerapistas, "Puedes Editar Tu Perfil desde la Pantalla de Inicio", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
         }else{
-            if (terapista.tipo == "master"){
+            if (terapista.tipo == "Master"){
                 if (intent.extras.getInt("MasterID") == 1){
                     cargarDatos(terapista)
                 }
