@@ -14,7 +14,7 @@ import android.widget.LinearLayout
 import com.example.pasantiaandrade.dbhelper.DBHelper
 
 import com.example.pasantiaandrade.R
-import com.example.pasantiaandrade.TerapistaInterfaz
+import com.example.pasantiaandrade.SeleccionDispositivoBuetooth
 import com.example.pasantiaandrade.master.InterfazMaster
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.slide_tipos_registro.view.*
@@ -56,7 +56,7 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
     private fun accederVentana(passwordUsuario: String, position: Int) {
         if(!passwordUsuario.isEmpty()){
             when (position) {
-                0 ->cargarVentana(passwordUsuario,"Terapista",null,TerapistaInterfaz::class.java)
+                0 ->cargarVentana(passwordUsuario,"Terapista",null,SeleccionDispositivoBuetooth::class.java)
                 1 ->cargarVentana(passwordUsuario,"Master",InterfazMaster::class.java,null)
             }
         }else{
@@ -64,7 +64,7 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
         }
     }
 
-    private fun cargarVentana(userPassword: String, userTipo: String, java: Class<InterfazMaster>?, java1: Class<TerapistaInterfaz>?) {
+    private fun cargarVentana(userPassword: String, userTipo: String, java: Class<InterfazMaster>?, java1: Class<SeleccionDispositivoBuetooth>?) {
         val usuario = DBHelper(context).getTask(userPassword, userTipo)
         if (usuario.nombre.isNullOrEmpty() or usuario.nombre.isNullOrBlank())
             TastyToast.makeText(context, "Acceso Denegado", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
