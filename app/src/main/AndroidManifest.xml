@@ -19,12 +19,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".TerapistaInterfaz"
-            android:label="@string/title_activity_terapista_interfaz"
+            android:name=".InterfazTera"
+            android:label="@string/title_activity_interfaz_tera"
             android:theme="@style/NoActionBar"></activity>
         <activity
             android:name=".InterfazTerapista"
             android:label="@string/title_activity_interfaz_terapista"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".TerapistaInterfaz"
+            android:label="@string/title_activity_terapista_interfaz"
             android:theme="@style/NoActionBar" />
         <activity android:name=".SeleccionDispositivoBuetooth" />
         <activity

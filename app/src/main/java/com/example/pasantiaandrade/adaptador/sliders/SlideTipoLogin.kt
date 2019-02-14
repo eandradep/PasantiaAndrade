@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import com.example.pasantiaandrade.InterfazTera
 import com.example.pasantiaandrade.dbhelper.DBHelper
 
 import com.example.pasantiaandrade.R
@@ -25,7 +26,8 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
     private var listaImagenes = intArrayOf( R.drawable.terapista, R.drawable.master)
     private var titulos = arrayOf( "Terapista", "Master")
     private var textoDescripciones = arrayOf( "Acceder como Terapista", "Administrar Informacion Como Master")
-    private var coloresFondo = intArrayOf(Color.rgb(125, 219, 212),Color.rgb(235, 109, 74))
+    private var coloresFondo = intArrayOf(Color.rgb(125, 219, 212), Color.rgb(235, 110, 74))
+
 
     override fun getCount(): Int {
         return coloresFondo.size
@@ -56,7 +58,7 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
     private fun accederVentana(passwordUsuario: String, position: Int) {
         if(!passwordUsuario.isEmpty()){
             when (position) {
-                0 ->cargarVentana(passwordUsuario,"Terapista",null,SeleccionDispositivoBuetooth::class.java)
+                0 ->cargarVentana(passwordUsuario,"Terapista",null,InterfazTera::class.java)
                 1 ->cargarVentana(passwordUsuario,"Master",InterfazMaster::class.java,null)
             }
         }else{
@@ -64,7 +66,7 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
         }
     }
 
-    private fun cargarVentana(userPassword: String, userTipo: String, java: Class<InterfazMaster>?, java1: Class<SeleccionDispositivoBuetooth>?) {
+    private fun cargarVentana(userPassword: String, userTipo: String, java: Class<InterfazMaster>?, java1: Class<InterfazTera>?) {
         val usuario = DBHelper(context).getTask(userPassword, userTipo)
         if (usuario.nombre.isNullOrEmpty() or usuario.nombre.isNullOrBlank())
             TastyToast.makeText(context, "Acceso Denegado", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
