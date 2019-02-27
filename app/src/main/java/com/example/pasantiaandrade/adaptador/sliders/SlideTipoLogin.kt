@@ -11,11 +11,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import com.example.pasantiaandrade.InterfazTera
+import com.example.pasantiaandrade.terapista.InterfazTera
 import com.example.pasantiaandrade.dbhelper.DBHelper
 
 import com.example.pasantiaandrade.R
-import com.example.pasantiaandrade.SeleccionDispositivoBuetooth
 import com.example.pasantiaandrade.master.InterfazMaster
 import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.slide_tipos_registro.view.*
@@ -58,7 +57,7 @@ class SlideTipoLogin(private var context: Context) : PagerAdapter() {
     private fun accederVentana(passwordUsuario: String, position: Int) {
         if(!passwordUsuario.isEmpty()){
             when (position) {
-                0 ->cargarVentana(passwordUsuario,"Terapista",null,InterfazTera::class.java)
+                0 ->cargarVentana(passwordUsuario,"Terapista",null, InterfazTera::class.java)
                 1 ->cargarVentana(passwordUsuario,"Master",InterfazMaster::class.java,null)
             }
         }else{

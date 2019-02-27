@@ -1,63 +1,42 @@
-package com.example.pasantiaandrade
+package com.example.pasantiaandrade.terapista
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
+import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.TextView
 import com.bumptech.glide.Glide
+import com.example.pasantiaandrade.*
 import com.example.pasantiaandrade.modelos.Terapista
+import com.example.pasantiaandrade.terapista.fragment.DispositivoBluetooth
+import com.example.pasantiaandrade.terapista.fragment.HomeFragment
 import kotlinx.android.synthetic.main.activity_interfaz_tera.*
-import kotlinx.android.synthetic.main.app_bar_interfaz_tera.*
 import kotlinx.android.synthetic.main.nav_header_interfaz_tera.view.*
+import java.io.Serializable
+
 
 @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
 
     private var header:View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_interfaz_tera)
-        setSupportActionBar(toolbar)
-
-
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
-
-        val toggle = ActionBarDrawerToggle(
-                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer_layout.addDrawerListener(toggle)
-        toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        //var header2 = nav_view.menu.getItem(0)
-
-
-        //(header2.setEnabled(true) as TextView).setTextColor(Color.parseColor("#2A6171"))
-
         header = nav_view.getHeaderView(0)
-
 
         cargarPerfil()
 
         cargarEstilos()
-
-
+        displayFragment(-1)
 
     }
 
@@ -67,6 +46,7 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         header!!.lblTelefonoPerfilTerapista.typeface=typeface
     }
 
+    @SuppressLint("SetTextI18n")
     private fun cargarPerfil() {
         try {
             val people : Terapista? = intent.extras.getSerializable("Terapista") as? Terapista
@@ -86,41 +66,31 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.interfaz_tera, menu)
-        return true
+    private fun displayFragment(id: Int){
+
+        val fragment= when (id){
+            R.id.btnDispositivosBT -> DispositivoBluetooth()
+            else -> this.addBundleFragment(HomeFragment(),intent.extras.getSerializable("Terapista"),"Terapista")
+        }
+        supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, fragment).commit()
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
-        }
+    private fun addBundleFragment(anyFragment: Fragment, serializable: Serializable?, clave: String): Fragment {
+        val args = Bundle()
+        args.putSerializable(clave,serializable)
+        anyFragment.arguments=args
+        return anyFragment
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
-        when (item.itemId) {
-            R.id.btnIniciarTerapia -> {
-                // Handle the camera action
-            }
-            R.id.btnListadoNinos -> {
 
-            }
-            R.id.btnListadoActividades -> {
+        displayFragment(item.itemId)
 
+        when (item.itemId){
+            R.id.btnLogOut -> {
+                this.singOut()
             }
-            R.id.btnDispositivosBT -> {
-
-            }
-            R.id.btnEditarPerfil -> {
-
-            }
-            R.id.btnLogOut -> singOut()
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)

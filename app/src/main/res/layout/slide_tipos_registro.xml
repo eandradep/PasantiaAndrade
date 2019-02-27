@@ -66,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/slideTipoRegistroTitulo"
                     android:layout_width="wrap_content"

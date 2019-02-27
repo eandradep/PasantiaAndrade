@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".InterfazTera"
+            android:name=".terapista.InterfazTera"
             android:label="@string/title_activity_interfaz_tera"
             android:theme="@style/NoActionBar"></activity>
         <activity
