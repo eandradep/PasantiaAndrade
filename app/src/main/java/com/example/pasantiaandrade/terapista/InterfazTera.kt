@@ -36,6 +36,7 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         cargarPerfil()
 
         cargarEstilos()
+
         displayFragment(-1)
 
     }
