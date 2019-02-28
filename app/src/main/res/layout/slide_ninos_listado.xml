@@ -84,7 +84,7 @@
                                     android:textAlignment="center"
                                     android:textColor="@color/colorLetras"
                                     android:textStyle="bold"
-                                    android:textSize="20sp" />
+                                    android:textSize="@dimen/tam_subtitulos" />
 
                                 <TextView
                                     android:id="@+id/lblListaNinoApellido"
@@ -94,7 +94,7 @@
                                     android:textColor="@color/colorLetras"
                                     android:textStyle="bold"
                                     android:textAlignment="center"
-                                    android:textSize="20sp" />
+                                    android:textSize="@dimen/tam_subtitulos" />
 
                             </LinearLayout>
 
@@ -114,7 +114,7 @@
                                     android:textColor="@color/colorLetras"
                                     android:textStyle="bold"
                                     android:textAlignment="center"
-                                    android:textSize="20sp"
+                                    android:textSize="@dimen/tam_subtitulos"
                                     tools:ignore="HardcodedText" />
 
                                 <TextView
@@ -124,7 +124,7 @@
                                     android:ems="2"
                                     android:text="Edad"
                                     android:textAlignment="center"
-                                    android:textSize="20sp"
+                                    android:textSize="@dimen/tam_subtitulos"
                                     android:textColor="@color/colorLetras"
                                     android:textStyle="bold"
                                     tools:ignore="HardcodedText" />
@@ -136,7 +136,7 @@
                                     android:ems="10"
                                     android:text="TextView"
                                     android:textAlignment="center"
-                                    android:textSize="20sp"
+                                    android:textSize="@dimen/tam_subtitulos"
                                     android:textColor="@color/colorLetras"
                                     android:textStyle="bold"
                                     tools:ignore="HardcodedText" />

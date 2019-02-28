@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title"
-        android:textSize="20sp"
+        android:textSize="@dimen/tam_subtitulos"
         android:textColor="@color/colorLetras"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -35,7 +35,7 @@
         android:id="@+id/lblTelefonoPerfilTerapista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="@dimen/tam_subtitulos"
         android:textColor="@color/colorLetras"
         android:text="@string/nav_header_subtitle" />
 

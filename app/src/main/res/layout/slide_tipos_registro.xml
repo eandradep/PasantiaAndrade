@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:text="A.A.N.S.D"
                 android:layout_margin="10dp"
-                android:textSize="35sp"
+                android:textSize="@dimen/tam_titulos"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -71,7 +71,7 @@
                     android:id="@+id/slideTipoRegistroTitulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/tam_subtitulos"
                     android:text="Titulo Registro"
                     android:layout_marginVertical="5dp"
                     android:textStyle="bold"
@@ -81,7 +81,7 @@
                     android:id="@+id/SlideTipoRegistroDescripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/tam_subtitulos"
                     android:text="Descripcion Registro"
                     android:layout_marginVertical="5dp"
                     android:textStyle="bold"
@@ -92,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Password"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/tam_subtitulos"
                     android:layout_marginVertical="5dp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText,UnusedAttribute" />

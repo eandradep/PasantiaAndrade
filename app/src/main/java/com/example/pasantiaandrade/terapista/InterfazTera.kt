@@ -66,7 +66,7 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    private fun displayFragment(id: Int){
+     fun displayFragment(id: Int){
 
         val fragment= when (id){
             R.id.btnDispositivosBT -> DispositivoBluetooth()
