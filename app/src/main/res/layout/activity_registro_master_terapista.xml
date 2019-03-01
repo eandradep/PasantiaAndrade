@@ -192,7 +192,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Registrar"
-                            android:textSize="20sp"
+                            android:textSize="@dimen/tam_descripcionbtn"
                             android:textColor="@color/colorLetras"
                             android:textStyle="bold"
                             tools:ignore="HardcodedText,SpUsage" />
@@ -220,7 +220,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="TomarFotoPerfil"
-                            android:textSize="20sp"
+                            android:textSize="@dimen/tam_descripcionbtn"
                             android:textColor="@color/colorLetras"
                             android:textStyle="bold"
                             tools:ignore="HardcodedText" />
@@ -249,7 +249,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Cancelar"
-                            android:textSize="20sp"
+                            android:textSize="@dimen/tam_descripcionbtn"
                             android:textColor="@color/colorLetras"
                             android:textStyle="bold"
                             tools:ignore="HardcodedText" />

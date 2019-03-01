@@ -13,8 +13,10 @@ import android.view.View
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.*
 import com.example.pasantiaandrade.modelos.Terapista
+import com.example.pasantiaandrade.terapista.fragment.CrearActividadesFragment
 import com.example.pasantiaandrade.terapista.fragment.DispositivoBluetooth
 import com.example.pasantiaandrade.terapista.fragment.HomeFragment
+import com.example.pasantiaandrade.terapista.fragment.LstNinosFragment
 import kotlinx.android.synthetic.main.activity_interfaz_tera.*
 import kotlinx.android.synthetic.main.nav_header_interfaz_tera.view.*
 import java.io.Serializable
@@ -36,6 +38,8 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         cargarPerfil()
 
         cargarEstilos()
+
+
 
         displayFragment(-1)
 
@@ -67,21 +71,16 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-     fun displayFragment(id: Int){
-
+     private fun displayFragment(id: Int){
         val fragment= when (id){
             R.id.btnDispositivosBT -> DispositivoBluetooth()
-            else -> this.addBundleFragment(HomeFragment(),intent.extras.getSerializable("Terapista"),"Terapista")
+            R.id.btnCrearActividades -> CrearActividadesFragment()
+            R.id.btnListadoNinos -> LstNinosFragment()
+            else -> MetodosAyuda(this).addBundleFragment(HomeFragment(),intent.extras.getSerializable("Terapista"),"Terapista")
         }
         supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, fragment).commit()
     }
 
-    private fun addBundleFragment(anyFragment: Fragment, serializable: Serializable?, clave: String): Fragment {
-        val args = Bundle()
-        args.putSerializable(clave,serializable)
-        anyFragment.arguments=args
-        return anyFragment
-    }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.

@@ -7,5 +7,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="tam_titulos">35sp</dimen>
     <dimen name="tam_subtitulos">22sp</dimen>
-    <dimen name="tam_descripcionbtn">16dp</dimen>
+    <dimen name="tam_descripcionbtn">20sp</dimen>
 </resources>

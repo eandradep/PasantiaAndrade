@@ -28,10 +28,11 @@
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/lblMensajePrincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="22sp"
+        android:textSize="@dimen/tam_subtitulos"
         android:text="En esta Seccion usted Puede realizar las Siguientes Actividades:"
         tools:ignore="HardcodedText" />
 
@@ -57,11 +58,12 @@
                 tools:ignore="ContentDescription" />
 
             <TextView
+                android:id="@+id/lblIniciarActividad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Iniciar Actividades"
                 tools:ignore="HardcodedText"
-                android:textSize="20dp"
+                android:textSize="@dimen/tam_descripcionbtn"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -75,18 +77,19 @@
             tools:ignore="UnusedAttribute,UseCompoundDrawables">
 
             <ImageView
+                android:id="@+id/imgListadoNino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_lista"
-
                 tools:ignore="ContentDescription" />
 
             <TextView
+                android:id="@+id/lblListadoNino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ver Lista Ninos"
                 tools:ignore="HardcodedText"
-                android:textSize="20dp"
+                android:textSize="@dimen/tam_descripcionbtn"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -100,17 +103,19 @@
             tools:ignore="UnusedAttribute,UseCompoundDrawables">
 
             <ImageView
+                android:id="@+id/imgbtnCrearActividad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_tarea"
                 tools:ignore="ContentDescription" />
 
             <TextView
+                android:id="@+id/lblCrearActividad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Crear Actividades"
                 tools:ignore="HardcodedText"
-                android:textSize="20dp"
+                android:textSize="@dimen/tam_descripcionbtn"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -124,17 +129,19 @@
             tools:ignore="UnusedAttribute,UseCompoundDrawables">
 
             <ImageView
+                android:id="@+id/imgBtnConfigurarBluetooth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_blt"
                 tools:ignore="ContentDescription" />
 
             <TextView
+                android:id="@+id/lblConfigurarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Configurar Bluetooth"
                 tools:ignore="HardcodedText"
-                android:textSize="20dp"
+                android:textSize="@dimen/tam_descripcionbtn"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -144,11 +151,14 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        tools:ignore="UseCompoundDrawables,UselessParent">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -157,11 +167,12 @@
             tools:ignore="ContentDescription" />
 
         <TextView
+            android:id="@+id/lblMensajeArrastre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Arrastre para Acceder al Menu"
             tools:ignore="HardcodedText"
-            android:textSize="20dp"
+            android:textSize="@dimen/tam_descripcionbtn"
             android:textStyle="bold"/>
 
     </LinearLayout>

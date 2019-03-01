@@ -17,7 +17,7 @@
             android:icon="@drawable/lstn"
             android:title="Listado Ninos"/>
         <item
-            android:id="@+id/btnListadoActividades"
+            android:id="@+id/btnCrearActividades"
             android:icon="@drawable/lsta"
             android:title="Actividades" />
         <item

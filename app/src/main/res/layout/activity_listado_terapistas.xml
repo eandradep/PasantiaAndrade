@@ -180,7 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Foto"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/tam_descripcionbtn"
                         android:textColor="@color/colorLetras"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText,SpUsage" />
@@ -208,7 +208,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Guardar"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/tam_descripcionbtn"
                         android:textStyle="bold"
                         android:textColor="@color/colorLetras"
                         tools:ignore="HardcodedText,SpUsage" />
@@ -237,7 +237,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Salir"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/tam_descripcionbtn"
                         android:textStyle="bold"
                         android:textColor="@color/colorLetras"
                         tools:ignore="HardcodedText,SpUsage" />

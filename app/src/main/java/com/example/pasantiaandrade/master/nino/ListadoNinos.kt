@@ -17,7 +17,7 @@ class ListadoNinos : AppCompatActivity() {
         setContentView(R.layout.activity_listado__ninos)
 
         viewPager = findViewById(R.id.viewPageListadoNino)
-        viewPager.adapter = SlideListadoNinos(this, DBHelper(this).listadoNinos)
+        viewPager.adapter = SlideListadoNinos(this, DBHelper(this).listadoNinos,true,null)
 
     }
 }

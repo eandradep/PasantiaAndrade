@@ -5,6 +5,10 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Build
+import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentActivity
+import android.support.v4.app.FragmentTransaction
 import android.support.v4.view.PagerAdapter
 import android.view.LayoutInflater
 import android.view.View
@@ -17,6 +21,9 @@ import com.example.pasantiaandrade.MetodosAyuda
 import com.example.pasantiaandrade.dbhelper.DBHelper
 import com.example.pasantiaandrade.modelos.Nino
 import com.example.pasantiaandrade.R
+import com.example.pasantiaandrade.modelos.Terapista
+import com.example.pasantiaandrade.terapista.fragment.HomeFragment
+import com.example.pasantiaandrade.terapista.fragment.LstNinosFragment
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.RadarChart
 import com.github.mikephil.charting.components.Legend
@@ -25,11 +32,12 @@ import com.github.mikephil.charting.data.RadarDataSet
 import com.github.mikephil.charting.data.RadarEntry
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import kotlinx.android.synthetic.main.slide_ninos_listado.view.*
+import java.io.Serializable
 import java.util.*
 
 
 @Suppress("DEPRECATION")
-class SlideListadoNinos(private var context: Context, private var listadoNinos:List<Nino>): PagerAdapter() {
+class SlideListadoNinos(private var context: Context, private var listadoNinos:List<Nino>, private var activarBoton:Boolean, private var terapista: Terapista?): PagerAdapter() {
 
     private lateinit var layoutInflater: LayoutInflater
 
@@ -57,8 +65,12 @@ class SlideListadoNinos(private var context: Context, private var listadoNinos:L
         view.sliderListadoNino.lblListaNinoEdad.text = MetodosAyuda(context).calcularEdad(GregorianCalendar(separacionDatos[2].toInt(), separacionDatos[1].toInt(), separacionDatos[0].toInt()))
         view.sliderListadoNino.lblListaNinoDireccion.text= this.listadoNinos[position].direccion
         view.sliderListadoNino.lblListaTelefono.text = this.listadoNinos[position].telefono
-
-        view.btnSalirListadoNinos.setOnClickListener { (context as Activity).finish() }
+        if (activarBoton){
+            view.btnSalirListadoNinos.setOnClickListener { (context as Activity).finish() }
+        }else{
+            view.btnSalirListadoNinos.setOnClickListener {
+                (context as FragmentActivity).supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, MetodosAyuda(context).addBundleFragment(HomeFragment(),terapista, "Terapista")).remove(LstNinosFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit() }
+        }
 
         view.lstObservacionesNinos.adapter = ListaValoracion(context, DBHelper(context).listadoOberservacion(this.listadoNinos[position].id))
 
@@ -123,4 +135,8 @@ class SlideListadoNinos(private var context: Context, private var listadoNinos:L
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as LinearLayout)
     }
+
+
+
+
 }
