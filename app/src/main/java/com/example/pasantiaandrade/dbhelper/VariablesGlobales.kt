@@ -31,5 +31,11 @@ class VariablesGlobales {
         var USER_COL_IMAGEN = "imagen"
         var USER_COL_TELEFONO= "telefono"
         var USER_COL_PASSWORD = "password"
+
+
+        var DISPOSITIVO_TABLE_NAME = "TAB_DISPOSITIVOS"
+        var DISPOSITIVO_COL_DIRECCION = "TM_ID"
+        var DISPOSITIVO_COL_NOMBRE = "nombre"
+        var DISPOSITIVO_COL_PREDEFINIDO = "apellido"
     }
 }

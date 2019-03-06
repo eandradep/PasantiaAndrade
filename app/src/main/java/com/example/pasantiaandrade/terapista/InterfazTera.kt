@@ -19,13 +19,14 @@ import com.example.pasantiaandrade.terapista.fragment.HomeFragment
 import com.example.pasantiaandrade.terapista.fragment.LstNinosFragment
 import kotlinx.android.synthetic.main.activity_interfaz_tera.*
 import kotlinx.android.synthetic.main.nav_header_interfaz_tera.view.*
-import java.io.Serializable
 
 
 @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private var header:View? = null
+
+    private var fragmentActual:Fragment?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,12 +74,19 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
      private fun displayFragment(id: Int){
         val fragment= when (id){
-            R.id.btnDispositivosBT -> DispositivoBluetooth()
-            R.id.btnCrearActividades -> CrearActividadesFragment()
-            R.id.btnListadoNinos -> LstNinosFragment()
+            R.id.btnDispositivosBT -> MetodosAyuda(this).addBundleFragment(DispositivoBluetooth(),intent.extras.getSerializable("Terapista"),"Terapista")
+            R.id.btnCrearActividades -> MetodosAyuda(this).addBundleFragment(CrearActividadesFragment(),intent.extras.getSerializable("Terapista"),"Terapista")
+            R.id.btnListadoNinos -> MetodosAyuda(this).addBundleFragment(LstNinosFragment(),intent.extras.getSerializable("Terapista"),"Terapista")
             else -> MetodosAyuda(this).addBundleFragment(HomeFragment(),intent.extras.getSerializable("Terapista"),"Terapista")
         }
-        supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, fragment).commit()
+         if (fragmentActual == null){
+             fragmentActual =  fragment
+             supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, fragment).commit()
+         }else{
+             supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, fragment).remove(fragmentActual!!).commit()
+             fragmentActual =  fragment
+         }
+
     }
 
 

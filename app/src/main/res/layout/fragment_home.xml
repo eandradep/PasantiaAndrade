@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/tam_subtitulos"
+        android:textSize="@dimen/tam_texto_ayuda_elementos"
         android:text="En esta Seccion usted Puede realizar las Siguientes Actividades:"
         tools:ignore="HardcodedText" />
 
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="Iniciar Actividades"
                 tools:ignore="HardcodedText"
-                android:textSize="@dimen/tam_descripcionbtn"
+                android:textSize="@dimen/tam_descripcion_botones"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:text="Ver Lista Ninos"
                 tools:ignore="HardcodedText"
-                android:textSize="@dimen/tam_descripcionbtn"
+                android:textSize="@dimen/tam_descripcion_botones"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:text="Crear Actividades"
                 tools:ignore="HardcodedText"
-                android:textSize="@dimen/tam_descripcionbtn"
+                android:textSize="@dimen/tam_descripcion_botones"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -141,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:text="Configurar Bluetooth"
                 tools:ignore="HardcodedText"
-                android:textSize="@dimen/tam_descripcionbtn"
+                android:textSize="@dimen/tam_descripcion_botones"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -172,7 +172,7 @@
             android:layout_height="wrap_content"
             android:text="Arrastre para Acceder al Menu"
             tools:ignore="HardcodedText"
-            android:textSize="@dimen/tam_descripcionbtn"
+            android:textSize="@dimen/tam_descripcion_botones"
             android:textStyle="bold"/>
 
     </LinearLayout>

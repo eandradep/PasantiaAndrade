@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp"
             android:enabled="false"
-            android:textSize="@dimen/tam_subtitulos"
+            android:textSize="@dimen/tam_texto_ayuda_elementos"
             android:textStyle="bold"
             android:ems="10"
             android:gravity="center"
@@ -48,7 +48,7 @@
             android:layout_marginVertical="2dp"
             android:enabled="false"
             android:gravity="center"
-            android:textSize="@dimen/tam_subtitulos"
+            android:textSize="@dimen/tam_texto_ayuda_elementos"
             android:textStyle="bold"
             android:ems="10"
             android:textColor="#2A6171"
@@ -64,7 +64,7 @@
             android:layout_marginVertical="2dp"
             android:enabled="false"
             android:gravity="center"
-            android:textSize="@dimen/tam_subtitulos"
+            android:textSize="@dimen/tam_texto_ayuda_elementos"
             android:ems="10"
             android:textStyle="bold"
             android:autofillHints="Telefono Usuario"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp"
             android:enabled="false"
-            android:textSize="@dimen/tam_subtitulos"
+            android:textSize="@dimen/tam_texto_ayuda_elementos"
             android:autofillHints="Password Usuario"
             android:textStyle="bold"
             android:textColor="#2A6171"
@@ -125,7 +125,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tomar Foto"
-                        android:textSize="@dimen/tam_descripcionbtn"
+                        android:textSize="@dimen/tam_descripcion_botones"
                         android:textStyle="bold"
                         android:textColor="#2A6171"
                         tools:ignore="HardcodedText" />
@@ -153,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Habilitar Edicion"
-                        android:textSize="@dimen/tam_descripcionbtn"
+                        android:textSize="@dimen/tam_descripcion_botones"
                         android:textStyle="bold"
                         android:textColor="#2A6171"
                         tools:ignore="HardcodedText" />
@@ -181,7 +181,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Guardar Cambios"
-                        android:textSize="@dimen/tam_descripcionbtn"
+                        android:textSize="@dimen/tam_descripcion_botones"
                         android:textStyle="bold"
                         android:textColor="#2A6171"
                         tools:ignore="HardcodedText" />
@@ -265,7 +265,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:textSize="@dimen/tam_descripcionbtn"
+                            android:textSize="@dimen/tam_descripcion_botones"
                             android:text="Agregar Nin@"
                             tools:ignore="HardcodedText" />
 
@@ -295,7 +295,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:text="Listado de Ninos"
-                            android:textSize="@dimen/tam_descripcionbtn"
+                            android:textSize="@dimen/tam_descripcion_botones"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -333,7 +333,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:text="Agregar un Tr."
-                            android:textSize="@dimen/tam_descripcionbtn"
+                            android:textSize="@dimen/tam_descripcion_botones"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -361,7 +361,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:text="Listado de Tr."
-                            android:textSize="@dimen/tam_descripcionbtn"
+                            android:textSize="@dimen/tam_descripcion_botones"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -399,7 +399,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:text="Cerrar Sesion"
-                            android:textSize="@dimen/tam_descripcionbtn"
+                            android:textSize="@dimen/tam_descripcion_botones"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>

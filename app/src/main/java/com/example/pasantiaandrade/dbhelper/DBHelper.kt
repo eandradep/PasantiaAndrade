@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
+import android.database.sqlite.SQLiteConstraintException
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
@@ -17,7 +18,16 @@ import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.USER_COL
 import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.USER_COL_TIPO
 import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.DATABASE_NAME
 import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.DATABASE_VER
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.DISPOSITIVO_COL_DIRECCION
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.DISPOSITIVO_COL_NOMBRE
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.DISPOSITIVO_COL_PREDEFINIDO
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.DISPOSITIVO_TABLE_NAME
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.NINO_COL_ID
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.NINO_TABLE_NAME
 import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.USER_TABLE_NAME
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.VAL_COL_ID
+import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.VAL_TABLE_NAME
+import com.example.pasantiaandrade.modelos.DispositivoBluetooth
 import com.example.pasantiaandrade.modelos.Observacion
 import com.example.pasantiaandrade.modelos.Nino
 import com.sdsmdg.tastytoast.TastyToast
@@ -32,8 +42,9 @@ class DBHelper (private var context: Context):SQLiteOpenHelper(context,DATABASE_
     override fun onCreate(db: SQLiteDatabase?) {
         try {
             db!!.execSQL("CREATE TABLE $USER_TABLE_NAME($USER_COL_ID INTEGER PRIMARY KEY AUTOINCREMENT,$USER_COL_NOMBRE TEXT,$USER_COL_APELLIDO TEXT, $USER_COL_TIPO TEXT,$USER_COL_IMAGEN TEXT, $USER_COL_TELEFONO TEXT, $USER_COL_PASSWORD TEXT)")
-            db.execSQL("CREATE TABLE ${VariablesGlobales.NINO_TABLE_NAME}(${VariablesGlobales.NINO_COL_ID} INTEGER PRIMARY KEY AUTOINCREMENT,${VariablesGlobales.NINO_COL_NOMBRE} TEXT, ${VariablesGlobales.NINO_COL_APELLIDO} TEXT, ${VariablesGlobales.NINO_COL_FECHA} TEXT,${VariablesGlobales.NINO_COL_IMAGEN} TEXT, ${VariablesGlobales.NINO_COL_TELEFONO} TEXT, ${VariablesGlobales.NINO_COL_DIRECCION} TEXT)")
-            db.execSQL("CREATE TABLE ${VariablesGlobales.VAL_TABLE_NAME}(${VariablesGlobales.VAL_COL_ID} INTEGER PRIMARY KEY AUTOINCREMENT, ${VariablesGlobales.VAL_COL_TM_FK} INTEGER,${VariablesGlobales.VAL_COL_TN_FK} INTEGER, ${VariablesGlobales.VAL_COL_FECHA} TEXT, ${VariablesGlobales.VAL_COL_Observacion} TEXT, FOREIGN KEY(${VariablesGlobales.VAL_COL_TM_FK}) REFERENCES $USER_TABLE_NAME($USER_COL_ID),FOREIGN KEY(${VariablesGlobales.VAL_COL_TN_FK}) REFERENCES ${VariablesGlobales.NINO_TABLE_NAME}(${VariablesGlobales.NINO_COL_ID}))")
+            db.execSQL("CREATE TABLE ${NINO_TABLE_NAME}(${NINO_COL_ID} INTEGER PRIMARY KEY AUTOINCREMENT,${VariablesGlobales.NINO_COL_NOMBRE} TEXT, ${VariablesGlobales.NINO_COL_APELLIDO} TEXT, ${VariablesGlobales.NINO_COL_FECHA} TEXT,${VariablesGlobales.NINO_COL_IMAGEN} TEXT, ${VariablesGlobales.NINO_COL_TELEFONO} TEXT, ${VariablesGlobales.NINO_COL_DIRECCION} TEXT)")
+            db.execSQL("CREATE TABLE ${VAL_TABLE_NAME}(${VAL_COL_ID} INTEGER PRIMARY KEY AUTOINCREMENT, ${VariablesGlobales.VAL_COL_TM_FK} INTEGER,${VariablesGlobales.VAL_COL_TN_FK} INTEGER, ${VariablesGlobales.VAL_COL_FECHA} TEXT, ${VariablesGlobales.VAL_COL_Observacion} TEXT, FOREIGN KEY(${VariablesGlobales.VAL_COL_TM_FK}) REFERENCES $USER_TABLE_NAME($USER_COL_ID),FOREIGN KEY(${VariablesGlobales.VAL_COL_TN_FK}) REFERENCES ${VariablesGlobales.NINO_TABLE_NAME}(${VariablesGlobales.NINO_COL_ID}))")
+            db.execSQL("CREATE TABLE ${DISPOSITIVO_TABLE_NAME}($DISPOSITIVO_COL_DIRECCION TEXT PRIMARY KEY,$DISPOSITIVO_COL_NOMBRE TEXT,$DISPOSITIVO_COL_PREDEFINIDO TEXT)")
             TastyToast.makeText(context, "Creacion de Tablas Correcta", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
         }catch (e: Exception){
             TastyToast.makeText(context, "Creacion de Tablas Incorrecta", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
@@ -43,8 +54,9 @@ class DBHelper (private var context: Context):SQLiteOpenHelper(context,DATABASE_
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db!!.execSQL("DROP TABLE IF EXISTS $USER_TABLE_NAME")
-        db.execSQL("DROP TABLE IF EXISTS ${VariablesGlobales.NINO_TABLE_NAME}")
-        db.execSQL("DROP TABLE IF EXISTS ${VariablesGlobales.VAL_TABLE_NAME}")
+        db.execSQL("DROP TABLE IF EXISTS ${NINO_TABLE_NAME}")
+        db.execSQL("DROP TABLE IF EXISTS ${VAL_TABLE_NAME}")
+        db.execSQL("DROP TABLE IF EXISTS ${DISPOSITIVO_TABLE_NAME}")
         onCreate(db)
     }
 
@@ -242,8 +254,6 @@ return db.update(VariablesGlobales.NINO_TABLE_NAME,values,"${VariablesGlobales.N
 
         }
 
-
-
     fun buscarNinoData(nombre:String, apellido:String, telefono:String, Direccion:String, fecha:String): Int {
         val usuario = Nino()
         val db = writableDatabase
@@ -326,4 +336,61 @@ return db.update(VariablesGlobales.NINO_TABLE_NAME,values,"${VariablesGlobales.N
             TastyToast.makeText(context, "Error Ingresando", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
         }
     }
+
+    /**
+     * METODOS CRUD DE LA TABLA DISPOSITIVOS
+     */
+
+    fun addDispositivo(dispositivo: DispositivoBluetooth){
+        try {
+            val db : SQLiteDatabase = this.writableDatabase
+            val values = ContentValues()
+            values.put(VariablesGlobales.DISPOSITIVO_COL_DIRECCION,  dispositivo.dispositivoDireccion)
+            values.put(VariablesGlobales.DISPOSITIVO_COL_NOMBRE,  dispositivo.dispositivoNombre)
+            values.put(VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO,  dispositivo.dispositivoPredefinido)
+            db.insert(VariablesGlobales.DISPOSITIVO_TABLE_NAME, null, values)
+            TastyToast.makeText(context, "Ingreso Exitoso", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
+            db.close()
+        }catch (x: SQLiteConstraintException){
+            TastyToast.makeText(context, "Error Ingresando CodigoReptido", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
+        }
+    }
+
+    fun buscarDispositivoPredefinido(): DispositivoBluetooth {
+        val dispositivo = DispositivoBluetooth()
+        val db = writableDatabase
+        val selectQuery = "SELECT  * FROM ${VariablesGlobales.DISPOSITIVO_TABLE_NAME} WHERE ${VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO} == 'Predefinido'"
+        val cursor = db.rawQuery(selectQuery, null)
+        if (cursor != null) {
+            cursor.moveToFirst()
+            while (!cursor.isAfterLast) {
+                dispositivo.dispositivoDireccion= cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_DIRECCION))
+                dispositivo.dispositivoNombre = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_NOMBRE))
+                dispositivo.dispositivoPredefinido = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO))
+                cursor.moveToNext()
+            }
+        }
+        cursor.close()
+        return dispositivo
+    }
+
+
+    fun buscarDispositivoId(_id:String): DispositivoBluetooth {
+        val dispositivo = DispositivoBluetooth()
+        val db = writableDatabase
+        val selectQuery = "SELECT  * FROM ${VariablesGlobales.DISPOSITIVO_TABLE_NAME} WHERE ${VariablesGlobales.DISPOSITIVO_COL_DIRECCION} == '${_id}'"
+        val cursor = db.rawQuery(selectQuery, null)
+        if (cursor != null) {
+            cursor.moveToFirst()
+            while (!cursor.isAfterLast) {
+                dispositivo.dispositivoDireccion= cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_DIRECCION))
+                dispositivo.dispositivoNombre = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_NOMBRE))
+                dispositivo.dispositivoPredefinido = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO))
+                cursor.moveToNext()
+            }
+        }
+        cursor.close()
+        return dispositivo
+    }
+
 }

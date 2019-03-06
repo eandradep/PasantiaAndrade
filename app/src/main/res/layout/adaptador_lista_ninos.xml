@@ -34,22 +34,22 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <EditText
+                    <TextView
                         android:id="@+id/txtFechaValoracionNinoLista"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/tam_subtitulos"
+                        android:textSize="@dimen/tam_texto_ayuda_elementos"
                         android:textAlignment="center"
                         android:ems="10"
                         android:textColor="@color/colorLetras"
                         android:textStyle="bold"
                         tools:ignore="Autofill,LabelFor,TextFields" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/txtAreaValoraciones"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:textSize="@dimen/tam_subtitulos"
+                        android:textSize="@dimen/tam_texto_ayuda_elementos"
                         android:inputType="text|textMultiLine"
                         android:gravity="top"
                         android:textColor="@color/colorLetras"

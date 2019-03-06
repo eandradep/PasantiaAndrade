@@ -2,12 +2,19 @@
   <dictionary name="root">
     <words>
       <w>bienvenid</w>
+      <w>buscar</w>
+      <w>camara</w>
       <w>cambiar</w>
       <w>clave</w>
       <w>datos</w>
       <w>estilos</w>
+      <w>fondo</w>
+      <w>foto</w>
+      <w>habilitar</w>
       <w>interfaz</w>
+      <w>nouser</w>
       <w>perfil</w>
+      <w>validacion</w>
     </words>
   </dictionary>
 </component>

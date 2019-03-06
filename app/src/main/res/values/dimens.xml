@@ -6,6 +6,6 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="tam_titulos">35sp</dimen>
-    <dimen name="tam_subtitulos">22sp</dimen>
-    <dimen name="tam_descripcionbtn">20sp</dimen>
+    <dimen name="tam_texto_ayuda_elementos">22sp</dimen>
+    <dimen name="tam_descripcion_botones">20sp</dimen>
 </resources>
