@@ -1,7 +1,6 @@
-package com.example.pasantiaandrade.terapista.fragment.juegos.AtencionConcetracion
+package com.example.pasantiaandrade.terapista.fragment.juegos.atencionyconcetracion
 
 import android.graphics.Typeface
-import android.media.MediaPlayer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.*
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.R
-import kotlinx.android.synthetic.main.slide_lista_juegos.view.*
 
 class JuegoParejas : AppCompatActivity() {
     private var imgMovUno: ImageView? = null

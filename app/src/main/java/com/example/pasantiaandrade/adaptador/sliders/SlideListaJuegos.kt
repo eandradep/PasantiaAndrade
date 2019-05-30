@@ -12,8 +12,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.R
-import com.example.pasantiaandrade.terapista.fragment.juegos.AtencionConcetracion.JuegoParejas
-import com.example.pasantiaandrade.terapista.fragment.juegos.SeleccionJuegos
+import com.example.pasantiaandrade.terapista.fragment.juegos.atencionyconcetracion.JuegoParejas
 import com.example.pasantiaandrade.terapista.fragment.juegos.control.controlRobot
 import kotlinx.android.synthetic.main.slide_lista_juegos.view.*
 

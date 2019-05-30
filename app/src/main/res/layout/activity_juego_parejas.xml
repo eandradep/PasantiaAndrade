@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/JuegoDos"
-    tools:context=".terapista.fragment.juegos.AtencionConcetracion.JuegoParejas">
+    tools:context=".terapista.fragment.juegos.atencionyconcetracion.JuegoParejas">
 
 
     <LinearLayout
