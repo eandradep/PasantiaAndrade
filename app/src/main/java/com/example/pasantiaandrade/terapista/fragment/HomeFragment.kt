@@ -57,7 +57,6 @@ class HomeFragment : Fragment() {
         v!!.lblSbTitulo.typeface = typeface
         v!!.lblMensajePrincipal.typeface=typeface
         v!!.lblListadoNino.typeface=typeface
-        v!!.lblIniciarActividad.typeface=typeface
         v!!.lblCrearActividad.typeface=typeface
         v!!.lblConfigurarBt.typeface=typeface
         v!!.lblMensajeArrastre.typeface=typeface

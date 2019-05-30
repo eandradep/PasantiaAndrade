@@ -40,8 +40,6 @@ class InterfazTera : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         cargarEstilos()
 
-
-
         displayFragment(-1)
 
     }

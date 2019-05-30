@@ -18,10 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".terapista.fragment.juegos.AtencionConcetracion.JuegoParejas"></activity>
+        <activity android:name=".terapista.fragment.juegos.control.controlRobot" />
+        <activity android:name=".terapista.fragment.juegos.SeleccionJuegos" />
         <activity
             android:name=".terapista.InterfazTera"
             android:label="@string/title_activity_interfaz_tera"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".InterfazTerapista"
             android:label="@string/title_activity_interfaz_terapista"

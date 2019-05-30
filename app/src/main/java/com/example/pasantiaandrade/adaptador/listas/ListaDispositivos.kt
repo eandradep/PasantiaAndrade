@@ -15,7 +15,6 @@ class ListaDispositivos(private var mContext: Context, private var listadoDispos
         val layoutInflater  = LayoutInflater.from(mContext)
         val filaLista = layoutInflater.inflate(R.layout.adaptador_lista_dispositivos,parent,false)
         filaLista.lblIdDispositivo.text = listadoDispositivos[position].dispositivoNombre.toString()
-
         return filaLista
     }
 

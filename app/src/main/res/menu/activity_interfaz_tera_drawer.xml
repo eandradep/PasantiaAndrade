@@ -8,14 +8,11 @@
             android:id="@+id/btnHome"
             android:icon="@drawable/home"
             android:title="Inicio" />
-        <item
-            android:id="@+id/btnIniciarTerapia"
-            android:icon="@drawable/terapia"
-            android:title="Terapia" />
+
         <item
             android:id="@+id/btnListadoNinos"
-            android:icon="@drawable/lstn"
-            android:title="Listado Ninos"/>
+            android:icon="@drawable/terapia"
+            android:title="Terapia"/>
         <item
             android:id="@+id/btnCrearActividades"
             android:icon="@drawable/lsta"

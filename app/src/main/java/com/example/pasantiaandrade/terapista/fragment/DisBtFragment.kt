@@ -22,7 +22,6 @@ import com.example.pasantiaandrade.dbhelper.DBHelper
 import com.example.pasantiaandrade.modelos.DispositivoBluetooth
 import com.example.pasantiaandrade.modelos.Terapista
 import com.sdsmdg.tastytoast.TastyToast
-import kotlinx.android.synthetic.main.activity_registro_master_terapista.*
 import kotlinx.android.synthetic.main.fragment_dis_bt.view.*
 import org.jetbrains.anko.sdk27.coroutines.onCheckedChange
 
@@ -38,8 +37,7 @@ class DispositivoBluetooth : Fragment() {
 
     private var v: View? =null
 
-    var predefinido :Boolean = false
-
+    private var predefinido :Boolean = false
 
     private var mBluetoothAdapter: BluetoothAdapter? = null
     private lateinit var mPairDevices: Set<BluetoothDevice>
@@ -54,6 +52,17 @@ class DispositivoBluetooth : Fragment() {
         this.cargarEstilos()
         dbHelper = DBHelper(v!!.context)
         v!!.btnCancelarRegistroDispositivo.setOnClickListener { this.cambiarFragment(HomeFragment()) }
+        this.iniciarBluetooth()
+        v!!.btnRegistrarDispositivo.setOnClickListener { this.guardarDispositivoPredefinido() }
+
+        v!!.checkBoxDispPredeterminado.onCheckedChange { _, _ ->
+            Log.d("Cmabiar","Valor")
+            predefinido = predefinido == false
+        }
+        return v
+    }
+
+    private fun iniciarBluetooth(){
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
         if(mBluetoothAdapter == null) {
             TastyToast.makeText(v!!.context, "Este DIspositivo No Soporta Bluetooth", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
@@ -61,61 +70,50 @@ class DispositivoBluetooth : Fragment() {
         }
         if(!mBluetoothAdapter!!.isEnabled) {
             val enableBluetoothIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
-            startActivityForResult(enableBluetoothIntent, solicitudHabilitacion)
+            this.startActivityForResult(enableBluetoothIntent, solicitudHabilitacion)
         }else{
-            this.pairedDeviceList()
+            this.validarPredefinido()
         }
-
-        v!!.btnRegistrarDispositivo.setOnClickListener { this.guardarDispositivo() }
-
-        v!!.checkBoxDispPredeterminado.onCheckedChange { _, _ ->
-            Log.d("Cmabiar","Valor")
-            predefinido = predefinido == false
-        }
-
-
-        return v
     }
 
-    private fun guardarDispositivo() {
+    private fun guardarDispositivoPredefinido() {
         if (v!!.lblDispBT.text.isNullOrEmpty()){
-            TastyToast.makeText(v!!.context, "Seleccione un Dispositivo de la Lista", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
+        TastyToast.makeText(v!!.context, "Seleccione un Dispositivo de la Lista", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
         }else{
-            val builder = AlertDialog.Builder(v!!.context)
-            builder.setTitle("Confirmar Cambios....").setMessage("Usted esta Seguro de Registrar al Nino sin un Fotografia...??")
-            builder.setPositiveButton("SI"){ _, _ ->
-                if (!predefinido)
-                    dbHelper.addDispositivo(DispositivoBluetooth(v!!.lblDispBT.text.toString(),v!!.txtNombreDispositivo.text.toString(),"noPredefinido"))
-                else
+
+            if(v!!.checkBoxDispPredeterminado.isChecked == true){
+                TastyToast.makeText(v!!.context, "El Dispositivo ya es Predefinido", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
+            }else{
+                val builder = AlertDialog.Builder(v!!.context)
+                builder.setTitle("Confirmar Cambios....").setMessage("Usted esta Seguro de Registrar al Nino sin un Fotografia...??")
+                builder.setPositiveButton("SI"){ _, _ ->
+                    dbHelper.eliminarPredefinido()
                     dbHelper.addDispositivo(DispositivoBluetooth(v!!.lblDispBT.text.toString(),v!!.txtNombreDispositivo.text.toString(),"Predefinido"))
-                TastyToast.makeText(v!!.context, "Registro Creado", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
+                    TastyToast.makeText(v!!.context, "Registro Creado", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS)
+                    this.cambiarFragment(HomeFragment())
+                }
+                builder.setNegativeButton("No"){ _, _ ->
+                    TastyToast.makeText(v!!.context, "Registro Cancelado", TastyToast.LENGTH_SHORT, TastyToast.CONFUSING)
+                }
+                val dialog: AlertDialog = builder.create()
+                dialog.show()
             }
-            builder.setNegativeButton("No"){ _, _ ->
-                TastyToast.makeText(v!!.context, "Registro Cancelado", TastyToast.LENGTH_SHORT, TastyToast.CONFUSING)
-            }
-            val dialog: AlertDialog = builder.create()
-            dialog.show()
         }
-
     }
-
-
-    private fun pairedDeviceList() {
+    private fun validarPredefinido() {
         mPairDevices = mBluetoothAdapter!!.bondedDevices
         val lstDispositivos = ArrayList<DispositivoBluetooth>()
-        if (!mPairDevices.isEmpty()) {
+        if (mPairDevices.isNotEmpty()) {
             for (device: BluetoothDevice in mPairDevices) {
                 val dispositivo:DispositivoBluetooth = dbHelper.buscarDispositivoId(device.address.toString())
-                if (dispositivo.dispositivoDireccion == null){
+                if(dispositivo.dispositivoDireccion == null){
                     dispositivo.dispositivoDireccion = device.address
                     dispositivo.dispositivoNombre = device.name
                     dispositivo.dispositivoPredefinido = "noPredefinido"
-                }else
-                    v!!.btnRegistrarDispositivo.isEnabled = false
-
-                Log.d("dispositivo","${dispositivo.dispositivoPredefinido}")
-                lstDispositivos.add(dispositivo)
-
+                    lstDispositivos.add(dispositivo)
+                }else{
+                    lstDispositivos.add(dispositivo)
+                }
             }
         } else {
             TastyToast.makeText(v!!.context, "No tiene DIspositivos Emparejados", TastyToast.LENGTH_SHORT, TastyToast.ERROR)
@@ -147,7 +145,7 @@ class DispositivoBluetooth : Fragment() {
                 TastyToast.makeText(v!!.context, "Conexion Fallida", TastyToast.LENGTH_SHORT, TastyToast.CONFUSING)
             }
         }
-        this.pairedDeviceList()
+        this.validarPredefinido()
     }
 
     private fun cargarEstilos(){

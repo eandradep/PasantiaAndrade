@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliderListaJuego"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgsliderecomendacion"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="3dp"/>
+
+    <TextView
+        android:id="@+id/lblrecomendacionTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="titulo"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/lblrecomendacionDescricpion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Descripcion"
+        android:textSize="17dp" />
+
+</LinearLayout>

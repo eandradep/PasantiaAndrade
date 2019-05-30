@@ -43,30 +43,6 @@
         android:orientation="horizontal"
         android:layout_margin="20dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="10dp"
-            tools:ignore="UnusedAttribute,UseCompoundDrawables">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_tera"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/lblIniciarActividad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Iniciar Actividades"
-                tools:ignore="HardcodedText"
-                android:textSize="@dimen/tam_descripcion_botones"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -80,14 +56,14 @@
                 android:id="@+id/imgListadoNino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_lista"
+                android:src="@drawable/ic_tera"
                 tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/lblListadoNino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ver Lista Ninos"
+                android:text="Iniciar Terapia"
                 tools:ignore="HardcodedText"
                 android:textSize="@dimen/tam_descripcion_botones"
                 android:textStyle="bold"/>

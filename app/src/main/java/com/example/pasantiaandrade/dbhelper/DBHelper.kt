@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteConstraintException
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
+import com.example.pasantiaandrade.adaptador.listas.ListaDispositivos
 import com.example.pasantiaandrade.modelos.Terapista
 import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.USER_COL_APELLIDO
 import com.example.pasantiaandrade.dbhelper.VariablesGlobales.Companion.USER_COL_ID
@@ -31,6 +32,7 @@ import com.example.pasantiaandrade.modelos.DispositivoBluetooth
 import com.example.pasantiaandrade.modelos.Observacion
 import com.example.pasantiaandrade.modelos.Nino
 import com.sdsmdg.tastytoast.TastyToast
+import org.jetbrains.anko.db.delete
 import java.lang.Exception
 
 
@@ -356,24 +358,32 @@ return db.update(VariablesGlobales.NINO_TABLE_NAME,values,"${VariablesGlobales.N
         }
     }
 
-    fun buscarDispositivoPredefinido(): DispositivoBluetooth {
-        val dispositivo = DispositivoBluetooth()
-        val db = writableDatabase
-        val selectQuery = "SELECT  * FROM ${VariablesGlobales.DISPOSITIVO_TABLE_NAME} WHERE ${VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO} == 'Predefinido'"
-        val cursor = db.rawQuery(selectQuery, null)
-        if (cursor != null) {
-            cursor.moveToFirst()
-            while (!cursor.isAfterLast) {
-                dispositivo.dispositivoDireccion= cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_DIRECCION))
-                dispositivo.dispositivoNombre = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_NOMBRE))
-                dispositivo.dispositivoPredefinido = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO))
-                cursor.moveToNext()
+    val listadoDispositivoBluetooth: List<DispositivoBluetooth>
+        @SuppressLint("Recycle")
+        get() {
+            val lstDispositivos = ArrayList<DispositivoBluetooth>()
+            val selectQuery  = "SELECT * FROM ${VariablesGlobales.DISPOSITIVO_TABLE_NAME}"
+            val db : SQLiteDatabase = this.writableDatabase
+            val cursor : Cursor = db.rawQuery(selectQuery, null)
+            if (cursor.moveToFirst())
+            {
+                do{
+                    val dispositivo = DispositivoBluetooth()
+                    dispositivo.dispositivoNombre = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_NOMBRE))
+                    dispositivo.dispositivoDireccion = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_DIRECCION))
+                    dispositivo.dispositivoPredefinido = cursor.getString(cursor.getColumnIndex(VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO))
+                    lstDispositivos.add(dispositivo)
+                }while (cursor.moveToNext())
             }
-        }
-        cursor.close()
-        return dispositivo
-    }
+            db.close()
+            return lstDispositivos
 
+        }
+    fun eliminarPredefinido() {
+        val db:SQLiteDatabase = this.writableDatabase
+        db.delete(VariablesGlobales.DISPOSITIVO_TABLE_NAME, "${VariablesGlobales.DISPOSITIVO_COL_PREDEFINIDO}=?", arrayOf("Predefinido"))
+        db.close()
+    }
 
     fun buscarDispositivoId(_id:String): DispositivoBluetooth {
         val dispositivo = DispositivoBluetooth()

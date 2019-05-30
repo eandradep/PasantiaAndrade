@@ -2,20 +2,21 @@ package com.example.pasantiaandrade.adaptador.sliders
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Build
-import android.os.Bundle
-import android.support.v4.app.Fragment
+import android.support.annotation.RequiresApi
 import android.support.v4.app.FragmentActivity
 import android.support.v4.app.FragmentTransaction
+import android.support.v4.content.ContextCompat.startActivity
 import android.support.v4.view.PagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import androidx.annotation.RequiresApi
 import com.bumptech.glide.Glide
+import com.example.pasantiaandrade.LoginUsuario
 import com.example.pasantiaandrade.adaptador.listas.ListaValoracion
 import com.example.pasantiaandrade.MetodosAyuda
 import com.example.pasantiaandrade.dbhelper.DBHelper
@@ -24,6 +25,7 @@ import com.example.pasantiaandrade.R
 import com.example.pasantiaandrade.modelos.Terapista
 import com.example.pasantiaandrade.terapista.fragment.HomeFragment
 import com.example.pasantiaandrade.terapista.fragment.LstNinosFragment
+import com.example.pasantiaandrade.terapista.fragment.juegos.SeleccionJuegos
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.RadarChart
 import com.github.mikephil.charting.components.Legend
@@ -32,7 +34,6 @@ import com.github.mikephil.charting.data.RadarDataSet
 import com.github.mikephil.charting.data.RadarEntry
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import kotlinx.android.synthetic.main.slide_ninos_listado.view.*
-import java.io.Serializable
 import java.util.*
 
 
@@ -70,6 +71,9 @@ class SlideListadoNinos(private var context: Context, private var listadoNinos:L
         }else{
             view.btnSalirListadoNinos.setOnClickListener {
                 (context as FragmentActivity).supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, MetodosAyuda(context).addBundleFragment(HomeFragment(),terapista, "Terapista")).remove(LstNinosFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit() }
+            view.sliderListadoNino.imgNinoLista.setOnClickListener {
+                view.context.startActivity(Intent(context, SeleccionJuegos::class.java).putExtra("MasterID",this.listadoNinos[position].id))
+            }
         }
 
         view.lstObservacionesNinos.adapter = ListaValoracion(context, DBHelper(context).listadoOberservacion(this.listadoNinos[position].id))
