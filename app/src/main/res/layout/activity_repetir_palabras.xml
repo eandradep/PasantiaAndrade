@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".terapista.fragment.juegos.verbal.RepetirPalabras"
+    android:background="@drawable/fondo_juegos">
+
+    <ImageView
+        android:id="@+id/imagenPrueba"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/lblGrabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Texto a mostrar"
+        android:textSize="@dimen/tam_descripcion_botones"
+        android:textStyle="bold"
+        android:ems="10"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnEscuchar"
+        android:background="@drawable/microfono"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/lblcontadorVerbal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contador"
+            android:textSize="@dimen/tam_descripcion_botones"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/salir"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

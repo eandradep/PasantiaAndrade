@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pasantiaandrade">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -17,23 +18,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".terapista.fragment.juegos.atencionyconcetracion.JuegoParejas"></activity>
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".terapista.fragment.juegos.verbal.RepetirPalabras"></activity>
+        <activity android:name=".terapista.fragment.juegos.atencionyconcetracion.JuegoParejas" />
         <activity android:name=".terapista.fragment.juegos.control.controlRobot" />
         <activity android:name=".terapista.fragment.juegos.SeleccionJuegos" />
         <activity
             android:name=".terapista.InterfazTera"
             android:label="@string/title_activity_interfaz_tera"
             android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".InterfazTerapista"
-            android:label="@string/title_activity_interfaz_terapista"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".TerapistaInterfaz"
-            android:label="@string/title_activity_terapista_interfaz"
-            android:theme="@style/NoActionBar" />
-        <activity android:name=".SeleccionDispositivoBuetooth" />
+
         <activity
             android:name=".master.terapista.ListadoTerapistas"
             android:screenOrientation="landscape" />

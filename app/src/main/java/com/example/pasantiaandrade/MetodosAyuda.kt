@@ -67,4 +67,16 @@ class MetodosAyuda (var context: Context) {
         return anyFragment
     }
 
+    fun desordenarNumeros(numerosAleatorios:IntArray): IntArray {
+        //desordenando los elementos
+        val r = Random()
+        for (i in numerosAleatorios.size downTo 1) {
+            val posicion = r.nextInt(i)
+            val tmp = numerosAleatorios[i - 1]
+            numerosAleatorios[i - 1] = numerosAleatorios[posicion]
+            numerosAleatorios[posicion] = tmp
+        }
+        return numerosAleatorios
+    }
+
 }

@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.R
 import com.example.pasantiaandrade.terapista.fragment.juegos.atencionyconcetracion.JuegoParejas
 import com.example.pasantiaandrade.terapista.fragment.juegos.control.controlRobot
+import com.example.pasantiaandrade.terapista.fragment.juegos.verbal.RepetirPalabras
 import kotlinx.android.synthetic.main.slide_lista_juegos.view.*
 
 class SlideListaJuegos(private var context: Context) : PagerAdapter() {
@@ -45,7 +46,7 @@ class SlideListaJuegos(private var context: Context) : PagerAdapter() {
         view.setOnClickListener {
             when (position) {
                 0 -> view.context.startActivity(Intent(context, controlRobot::class.java).putExtra("CodigoNino","1"))
-                1 -> Toast.makeText(context, "Elemento 2", Toast.LENGTH_SHORT).show()
+                1 -> view.context.startActivity(Intent(context, RepetirPalabras::class.java).putExtra("CodigoNino","1"))
                 2 -> Toast.makeText(context, "Elemento 3", Toast.LENGTH_SHORT).show()
                 3 -> view.context.startActivity(Intent(context, JuegoParejas::class.java).putExtra("CodigoNino","1"))
                 4 -> Toast.makeText(context, "Elemento 5", Toast.LENGTH_SHORT).show()
