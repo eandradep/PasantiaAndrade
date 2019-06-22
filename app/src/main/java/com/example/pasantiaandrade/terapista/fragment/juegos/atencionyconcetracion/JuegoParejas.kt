@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.*
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.R
+import kotlinx.android.synthetic.main.activity_juego_parejas.*
 
 class JuegoParejas : AppCompatActivity() {
     private var imgMovUno: ImageView? = null
@@ -42,6 +43,7 @@ class JuegoParejas : AppCompatActivity() {
         this.Iniciar_Imagenes_Staticas()
 
         IniciarDatos()
+        this.btnSalirPares.setOnClickListener { finish() }
 
     }
 

@@ -12,12 +12,14 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.pasantiaandrade.R
+import com.example.pasantiaandrade.modelos.Nino
+import com.example.pasantiaandrade.modelos.Terapista
 import com.example.pasantiaandrade.terapista.fragment.juegos.atencionyconcetracion.JuegoParejas
 import com.example.pasantiaandrade.terapista.fragment.juegos.control.controlRobot
 import com.example.pasantiaandrade.terapista.fragment.juegos.verbal.RepetirPalabras
 import kotlinx.android.synthetic.main.slide_lista_juegos.view.*
 
-class SlideListaJuegos(private var context: Context) : PagerAdapter() {
+class SlideListaJuegos(private var context: Context, private var people: Terapista, private var nino: Nino) : PagerAdapter() {
 
     private var layoutInflater: LayoutInflater? = null
     var listaImagenes = intArrayOf(R.drawable.image_7, R.drawable.image_1, R.drawable.image_2, R.drawable.image_3, R.drawable.image_4, R.drawable.image_5, R.drawable.image_6)
@@ -45,7 +47,7 @@ class SlideListaJuegos(private var context: Context) : PagerAdapter() {
         view.lblrecomendacionDescricpion.typeface =typeface
         view.setOnClickListener {
             when (position) {
-                0 -> view.context.startActivity(Intent(context, controlRobot::class.java).putExtra("CodigoNino","1"))
+                0 -> view.context.startActivity(Intent(context, controlRobot::class.java).putExtra("Terapista",people).putExtra("Infante",nino))
                 1 -> view.context.startActivity(Intent(context, RepetirPalabras::class.java).putExtra("CodigoNino","1"))
                 2 -> Toast.makeText(context, "Elemento 3", Toast.LENGTH_SHORT).show()
                 3 -> view.context.startActivity(Intent(context, JuegoParejas::class.java).putExtra("CodigoNino","1"))

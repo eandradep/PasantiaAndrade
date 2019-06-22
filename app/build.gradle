@@ -43,6 +43,10 @@ dependencies {
 
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
 // Libreria para Hacer graficos cheveres
+
+    implementation 'com.akexorcist:bluetoothspp:1.0.0'// Libreria para controlar Bluetooth
+    implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+
 }
 repositories {
     mavenCentral()

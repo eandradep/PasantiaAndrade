@@ -24,7 +24,18 @@
         android:hint="Texto a mostrar"
         android:textSize="@dimen/tam_descripcion_botones"
         android:textStyle="bold"
-        android:ems="10"/>
+        android:ems="30"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="200sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
 
     <ImageButton
         android:id="@+id/imgbtnEscuchar"
@@ -50,12 +61,17 @@
             android:textStyle="bold"/>
 
         <ImageButton
+            android:id="@+id/btnSalirLenguaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/salir"/>
 
 
     </LinearLayout>
+
+
+
+
 
 
 </LinearLayout>

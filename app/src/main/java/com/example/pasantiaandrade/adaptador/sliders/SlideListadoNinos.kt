@@ -72,7 +72,7 @@ class SlideListadoNinos(private var context: Context, private var listadoNinos:L
             view.btnSalirListadoNinos.setOnClickListener {
                 (context as FragmentActivity).supportFragmentManager.beginTransaction().replace(R.id.RelativeLayout, MetodosAyuda(context).addBundleFragment(HomeFragment(),terapista, "Terapista")).remove(LstNinosFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit() }
             view.sliderListadoNino.imgNinoLista.setOnClickListener {
-                view.context.startActivity(Intent(context, SeleccionJuegos::class.java).putExtra("MasterID",this.listadoNinos[position].id))
+                view.context.startActivity(Intent(context, SeleccionJuegos::class.java).putExtra("Terapista",terapista).putExtra("Infante",this.listadoNinos[position]))
             }
         }
 
